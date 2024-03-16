@@ -1,0 +1,99 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.product-card {
+  border: 1px solid $gray-300;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  @include transition-sm;
+
+  &:hover {
+    border: 1px solid $primary;
+    .product-card__action {
+      opacity: 1;
+      visibility: visible;
+      right: 1rem;
+    }
+
+    .product-card__img {
+      display: block;
+
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    display: block;
+
+    img {
+      @include transition-sm;
+    }
+  }
+
+  &__action {
+    position: absolute;
+    top: 1rem;
+    right: -4rem;
+    padding: 1px;
+    opacity: 0;
+    visibility: hidden;
+    @include transition-md;
+
+    .action-btn {
+      display: block;
+      background-color: #fff;
+      @include shadow-1;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+      padding: 0.3rem 0.5rem;
+      @include transition-sm;
+
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+
+      i {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .discount {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    background-color: $primary;
+    color: #fff;
+  }
+
+  &__body {
+    color: $black;
+    text-align: start;
+    padding: 1rem;
+
+    .title {
+      @include product-title;
+    }
+
+    .price-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .line-through {
+        text-decoration: line-through;
+      }
+
+      .sold {
+        color: $gray-600;
+      }
+    }
+  }
+}

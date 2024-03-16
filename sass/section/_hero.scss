@@ -1,0 +1,105 @@
+@use "../custom" as *;
+
+.categories-menu {
+  border: 1px solid $gray-200;
+
+  .nav-item {
+    padding: 0.7rem 1.5rem;
+  }
+}
+.hero {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  // grid-template: 2fr 2fr 1fr / 1fr 4fr 1fr;
+  // grid-template-columns: 1fr 4fr 1fr 1fr;
+  // grid-template-rows: 2fr 2fr 1fr 1fr;
+  grid-template-areas:
+    "m m c c c c c c c c l l"
+    "m m c c c c c c c c r r";
+  &__item-1 {
+    grid-area: m;
+  }
+
+  &__item-2 {
+    grid-area: c;
+    background-color: red;
+    .hero-slider {
+      .hero-slider-item {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: auto !important;
+          vertical-align: top;
+        }
+        .hero-cotnent {
+          position: absolute;
+          top: 0;
+          padding: 6rem 5rem;
+          text-align: left;
+          .title-1 {
+            letter-spacing: 0.2rem;
+            color: $gray-300;
+          }
+          .title-2 {
+            color: $gray-100;
+          }
+        }
+        .text {
+          color: $gray-400;
+        }
+      }
+    }
+  }
+  &__item-3 {
+    grid-area: l;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__item-4 {
+    grid-area: r;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .slick-slider {
+    margin-bottom: 0 !important;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 2rem;
+    margin-bottom: 0;
+  }
+  .slick-slide {
+    padding: 0;
+  }
+  .slider {
+    margin: 0 auto;
+  }
+  .slider img {
+    height: auto;
+  }
+  // .slide {
+  //   padding: 0;
+  // }
+
+  // .slick-list {
+  //   overflow: hidden;
+  // }
+}
+.slick-slider {
+  margin-bottom: 0;
+}
+/* Custom styles for the slides */
+.slick-slide img {
+  width: 100%; /* Ensure images fill the slider container */
+  height: 100%; /* Maintain aspect ratio */
+}

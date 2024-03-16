@@ -1,0 +1,28 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.nav-wraper {
+  background-color: $primary;
+
+  .categories {
+    background: $secondary;
+    @include flex;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+  }
+  .navbar {
+    padding: 0;
+  }
+
+  .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: $gray-200;
+    @include transition-sm;
+    &:hover {
+      color: #fff;
+    }
+    &.active {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "../custom" as *;
+.section-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+// search-box
+.search-box {
+  padding: 0.4rem 1.3rem !important;
+}
+
+.input-group {
+  padding: 0;
+  .search-box {
+    border-right: none;
+    border-radius: 50rem;
+    &:focus {
+      border-right: none;
+      ~ .input-group-text {
+        border-color: $primary;
+      }
+    }
+  }
+  .search-icon {
+    background-color: transparent;
+    border-radius: 50rem;
+
+    padding: 0.4rem 1.3rem;
+    i {
+      font-size: 1.6rem;
+      transform: rotate(-90deg);
+      color: $gray-600;
+    }
+  }
+}
+
+.search-box,
+.form-check-input {
+  &:focus {
+    border: 1px solid $primary;
+    box-shadow: none;
+  }
+}
+//end of  search-box

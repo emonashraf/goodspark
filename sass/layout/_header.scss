@@ -1,0 +1,60 @@
+@use "../custom" as *;
+
+.header {
+  background-color: #fff;
+  .logo {
+    color: $gray-900;
+    font-size: 2rem;
+    font-weight: 700;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  .action {
+    .action-list {
+      position: relative;
+      display: inline-block;
+
+      &:hover {
+        .action-list__text {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &__icon {
+        color: $gray-600;
+        font-size: 1.5rem;
+      }
+
+      &__text {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        bottom: 140%;
+        left: 50%;
+        transform: translate(-50%);
+        color: #fff;
+        background-color: $black;
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
+        z-index: 1;
+
+        &:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid $black;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+          top: 100%;
+        }
+      }
+    }
+  }
+}

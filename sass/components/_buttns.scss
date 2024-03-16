@@ -1,0 +1,68 @@
+@use "../custom" as *;
+
+.primary-btn {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 0.1rem solid rgba($white, 0.6);
+  border-radius: 5px;
+  background-color: $primary;
+  transition: all 0.3s ease;
+  color: $white;
+  border: 0.13rem solid $primary;
+  transition: all 0.3s ease;
+
+  i {
+    margin-left: 0.3rem;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: $primary;
+    border: 0.1.3rem solid $primary;
+    transition: all 0.5s ease;
+  }
+}
+.btn-sm {
+  padding: 0.3rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba($white, 0.6);
+  background-color: $primary;
+  transition: all 0.3s ease;
+  color: $white;
+  border: 0.13rem solid $primary;
+  transition: all 0.3s ease;
+
+  i {
+    margin-left: 0.3rem;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: $primary;
+    border: 0.1.3rem solid $primary;
+    transition: all 0.5s ease;
+  }
+}
+.tab-btn {
+  padding: 0.3rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 0.1rem solid rgba($white, 0.6);
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  color: $primary;
+  border: 1px solid $primary;
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary;
+    color: $white;
+    transition: all 0.5s ease;
+  }
+}

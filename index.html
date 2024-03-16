@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoodsPark</title>
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+
+  <body>
+    <!-- ************* top nav **************** -->
+    <div class="top-nav-section">
+      <div class="top-nav py-2 mb-2">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="d-flex">
+                <div class="custom-select">
+                  <span class="custom-select-selected-item"></span>
+                  <ul class="custom-select-list">
+                    <li class="custom-select-list-item">English</li>
+                    <li class="custom-select-list-item selected">Bangla</li>
+                    <li class="custom-select-list-item">French</li>
+                    <li class="custom-select-list-item">Arabic</li>
+                    <li class="custom-select-list-item">Chinese</li>
+                  </ul>
+                </div>
+
+                <div class="custom-select ms-5">
+                  <span class="custom-select-selected-item"></span>
+                  <ul class="custom-select-list">
+                    <li class="custom-select-list-item">USD</li>
+                    <li class="custom-select-list-item selected">EUR</li>
+                    <li class="custom-select-list-item">BDT</li>
+                    <li class="custom-select-list-item">GBP</li>
+                    <li class="custom-select-list-item">AED</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <ul class="top-nav__right gap-4 d-flex justify-content-end m-auto">
+                <li>
+                  <a href="#">Helpline +1 3459</a>
+                </li>
+                <li>
+                  <a href="#">Login</a>
+                </li>
+                <li>
+                  <a href="#">Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ************* Header  **************** -->
+    <header class="header position-sticky top-0 header z-3">
+      <div class="container">
+        <div class="row justify-content-between align-items-center py-3">
+          <!-- top header -->
+          <div class="col-3">
+            <!-- logo -->
+            <a class="navbar-brand logo" href="index.html">Goods<span>Park</span></a>
+          </div>
+          <div class="col-9">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-md-9">
+                <div class="input-group">
+                  <input type="text" class="form-control search-box" placeholder="Search..." aria-label="search" />
+                  <span class="input-group-text search-icon"> <i class="las la-search"></i></span>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <ul class="d-flex gap-3 justify-content-end action my-auto">
+                  <li class="action-list">
+                    <a href="#">
+                      <i class="las la-sync-alt action-list__icon"></i>
+                      <span class="action-list__text">Compare</span>
+                    </a>
+                  </li>
+                  <li class="action-list">
+                    <a href="#">
+                      <i class="lar la-heart action-list__icon"></i>
+                      <span class="action-list__text">Wishlist</span>
+                    </a>
+                  </li>
+                  <li class="action-list">
+                    <a href="#"> <i class="las la-shopping-cart action-list__icon"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <nav class="nav-wraper">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-2">
+              <div class="categories">
+                <h5>All Categories</h5>
+                <span><i class="las la-angle-down"></i></span>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="navbar navbar-expand-xl menu-bar cssanimation leFadeInTop">
+                <div class="container">
+                  <div class="btn-wrapper gap-3">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <div class="nav-section offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                      <a class="navbar-brand" href="#">Goods<span>Park</span></a>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="nav-menu offcanvas-body">
+                      <ul class="navbar-nav flex-grow-1 nav-bar-center">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="investment.html">Investment</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dashboard </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="my_account.html">My Account</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="withdrawal.html">Withdrawal</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="history.html">History</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="wallet.html">Wallet</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="settings.html">Settings</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="about.html">about</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="investor.html">Investor</a>
+                            </li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li>
+                              <a class="dropdown-item" href="signin.html">Sign In</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="signup.html">Sign UP</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="forget_password.html">Forget Password</a>
+                            </li>
+                            <li><a class="dropdown-item" href="error.html">404</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Blog </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="blog.html">Blog Grid</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="blog_datails.html">Blog Datails</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                      <!-- <div class="nav-btn-group">
+                        <a href="signin.html" class="btn rounded-pill nav-btn-1 me-1">Sign in</a>
+                        <a href="signup.html" class="btn rounded-pill nav-btn-2">Sign up</a>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ************ HERO SECTION ************** -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__item-1">
+            <ul class="categories-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Men's Fashion</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Women's Fashion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Labtops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Televisions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Watch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HeadPhones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beauty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home & Garden</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Industrial Machinery</a>
+              </li> -->
+            </ul>
+          </div>
+          <div class="hero__item-2">
+            <div class="slider-col-1 slide hero-slider">
+              <!-- Item 1 -->
+              <div class="hero-slider-item">
+                <img src="img/hero/hero-bg-1.jpg" alt="hero-banner" class="hero-img" />
+                <div class="hero-cotnent">
+                  <h5 class="title-1">Exclusive offer</h5>
+                  <h1 class="title-2">
+                    Best Collection for <br />
+                    home decoration
+                  </h1>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                    Blanditiis atque inventore nam esse est aliquam optio
+                  </p>
+                  <div class="mt-5">
+                    <a href="#" class="primary-btn">Show Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__item-3">
+            <img src="img/banner.jpg.jpg" alt="bannr" class="img-fluid" />
+          </div>
+          <div class="hero__item-4">
+            <img src="img/banner.jpg.jpg" alt="bannr" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ product Llink ************** -->
+    <div class="product-link-section">
+      <div class="ptb">
+        <div class="container">
+          <div class="product-link">
+            <div class="row gy-4 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+              <div class="col">
+                <a href="#" class="product-link-item">
+                  <div class="product-link-item__img">
+                    <img src="./img/product-link/product-link-1.jpg" class="img-fluid" alt="product-link-img" />
+                  </div>
+                  <span class="product-link-item__text">Grocery</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="product-link-item">
+                  <div class="product-link-item__img">
+                    <img src="./img/product-link/product-link-2.jpg" class="img-fluid" alt="product-link-img" />
+                  </div>
+                  <span class="product-link-item__text">Beauty & Glamour</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="product-link-item">
+                  <div class="product-link-item__img">
+                    <img src="./img/product-link/product-link-3.jpg" class="img-fluid" alt="product-link-img" />
+                  </div>
+                  <span class="product-link-item__text">Fashion</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="product-link-item">
+                  <div class="product-link-item__img">
+                    <img src="./img/product-link/product-link-4.jpg" class="img-fluid" alt="product-link-img" />
+                  </div>
+                  <span class="product-link-item__text">Home Makeover</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="product-link-item">
+                  <div class="product-link-item__img">
+                    <img src="./img/product-link/product-link-4.jpg" class="img-fluid" alt="product-link-img" />
+                  </div>
+                  <span class="product-link-item__text">Tools $ Equipment</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ************ flash sale ************** -->
+    <section class="flash-sale-section">
+      <div class="pb">
+        <div class="container">
+          <div class="flash-sale-wraper">
+            <div class="d-flex justify-content-between">
+              <div class="section-header">
+                <h4>Flash Sale</h4>
+                <a href="#">View All</a>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-4">
+              <!-- col-1 -->
+              <div class="col">
+                <div class="product-card">
+                  <a href="#" class="product-card__img">
+                    <img src="./img/flash-sale/flash-sale-1.jpg" class="img-fluid" alt="Flash sale Image" />
+                  </a>
+                  <div class="discount">50%</div>
+                  <div class="product-card__action">
+                    <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                    <button class="action-btn"><i class="lar la-heart"></i></button>
+                    <button class="action-btn"><i class="las la-sync"></i></button>
+                  </div>
+                  <div class="product-card__body">
+                    <h5 class="title"><a href="#">Smart Watch</a></h5>
+                    <div>
+                      <div class="price-box">
+                        <div>$550 <span class="line-through">$432</span></div>
+                        <span class="sold">223 sold</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- col-2 -->
+              <div class="col">
+                <div class="product-card">
+                  <a href="#" class="product-card__img">
+                    <img src="./img/flash-sale/flash-sale-2.jpg" class="img-fluid" alt="Flash sale Image" />
+                  </a>
+                  <div class="discount">30%</div>
+                  <div class="product-card__action">
+                    <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                    <button class="action-btn"><i class="lar la-heart"></i></button>
+                    <button class="action-btn"><i class="las la-sync"></i></button>
+                  </div>
+                  <div class="product-card__body">
+                    <h5 class="title"><a href="#">White T-shirt</a></h5>
+                    <div>
+                      <div class="price-box">
+                        <div>$150 <span class="line-through">$200</span></div>
+                        <span class="sold">121 sold</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- col-3 -->
+              <div class="col">
+                <div class="product-card">
+                  <a href="#" class="product-card__img">
+                    <img src="./img/flash-sale/flash-sale-3.jpg" class="img-fluid" alt="Flash sale Image" />
+                  </a>
+                  <div class="discount">50%</div>
+                  <div class="product-card__action">
+                    <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                    <button class="action-btn"><i class="lar la-heart"></i></button>
+                    <button class="action-btn"><i class="las la-sync"></i></button>
+                  </div>
+                  <div class="product-card__body">
+                    <h5 class="title"><a href="#">Men Shoes</a></h5>
+                    <div>
+                      <div class="price-box">
+                        <div>$350 <span class="line-through">$430</span></div>
+                        <span class="sold">133 sold</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- col 4 -->
+              <div class="col">
+                <div class="product-card">
+                  <a href="#" class="product-card__img">
+                    <img src="./img/flash-sale/flash-sale-4.jpg" class="img-fluid" alt="Flash sale Image" />
+                  </a>
+                  <div class="discount">50%</div>
+                  <div class="product-card__action">
+                    <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                    <button class="action-btn"><i class="lar la-heart"></i></button>
+                    <button class="action-btn"><i class="las la-sync"></i></button>
+                  </div>
+                  <div class="product-card__body">
+                    <h5 class="title"><a href="#">Girls Slip Dress</a></h5>
+                    <div>
+                      <div class="price-box">
+                        <div>$150 <span class="line-through">$232</span></div>
+                        <span class="sold">213 sold</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- col -5 -->
+              <div class="col">
+                <div class="product-card">
+                  <a href="#" class="product-card__img">
+                    <img src="./img/flash-sale/flash-sale-5.jpg" class="img-fluid" alt="Flash sale Image" />
+                  </a>
+                  <div class="discount">50%</div>
+                  <div class="product-card__action">
+                    <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                    <button class="action-btn"><i class="lar la-heart"></i></button>
+                    <button class="action-btn"><i class="las la-sync"></i></button>
+                  </div>
+                  <div class="product-card__body">
+                    <h5 class="title"><a href="#">Girls Nighte Dress</a></h5>
+                    <div>
+                      <div class="price-box">
+                        <div>$220 <span class="line-through">$350</span></div>
+                        <span class="sold">135 sold</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ new product ************** -->
+    <section class="new-product-section pb">
+      <div class="container">
+        <div class="new-product">
+          <div class="d-flex justify-content-between">
+            <div class="section-header">
+              <h4>New Product</h4>
+              <a href="#">View All</a>
+            </div>
+          </div>
+          <div class="slider-col-5 slide">
+            <!-- item 1 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/new-product/product-1.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h5 class="title"><a href="#">Man Jecket</a></h5>
+                  <span>$250</span>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/new-product/product-2.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h5 class="title"><a href="#">Man shirt</a></h5>
+                  <span>$200</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/new-product/product-3.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h5 class="title"><a href="#">Man Shoes</a></h5>
+                  <span>$270</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/new-product/product-4.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h5 class="title"><a href="#">Girls Long Dress</a></h5>
+                  <span>$350</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 5 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/new-product/product-5.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h5 class="title"><a href="#">Girls Sheath Dress</a></h5>
+                  <span>$250</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 6 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/new-product/product-6.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h5 class="title"><a href="#">Girls Yellow Dress</a></h5>
+                  <span>$550</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Banner ************** -->
+    <div class="banner-section">
+      <div class="container">
+        <div class="ptb">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <a href="#" class="banner-col">
+                <img src="./img/banner-img/banner-img-1.jpg" class="img-fluid banner-col__img" alt="Banner Image" />
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="banner-col">
+                <img src="./img/banner-img/banner-img-2.jpg" class="img-fluid banner-col__img" alt="Banner Image" />
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="banner-col">
+                <img src="./img/banner-img/banner-img-3.jpg" class="img-fluid banner-col__img" alt="Banner Image" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ************ Top Categories ************** -->
+    <section class="new-product-section pb">
+      <div class="container">
+        <div class="new-product">
+          <div class="d-flex justify-content-between">
+            <div class="section-header">
+              <h5>Top Categories</h5>
+              <a href="#">View All</a>
+            </div>
+          </div>
+          <div class="slider-col-5 slide">
+            <!-- item 1 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/top-categories/categories-1.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h6 class="title"><a href="#">Hp Elite Dragonfly Notebook px(7th generation Cor i5)</a></h6>
+                  <span>$250</span>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/top-categories/categories-2.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h6 class="title"><a href="#">AE 7in1 Multipurpose Wire Stripper 7inch (180mm)</a></h6>
+                  <span>$200</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/top-categories/categories-3.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h6 class="title"><a href="#"> HP_Wireless Mouse S9000 For Desktop & Laptop - Mouse</a></h6>
+                  <span>$270</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/top-categories/categories-4.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h6 class="title"><a href="#">Walton Multi-Color RGB Standard Keyboard WKS007WB</a></h6>
+                  <span>$350</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 5 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/top-categories/categories-5.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h6 class="title"><a href="#">Realme C30-2GB RAM/32GB Rom Mobile Smartphone</a></h6>
+                  <span>$250</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 6 -->
+            <div>
+              <div class="product-card">
+                <a href="#" class="product-card__img">
+                  <img src="./img/top-categories/categories-6.jpg" class="img-fluid" alt="Flash sale Image" />
+                </a>
+                <div class="product-card__action">
+                  <button class="action-btn"><i class="las la-shopping-cart"></i></button>
+                  <button class="action-btn"><i class="lar la-heart"></i></button>
+                  <button class="action-btn"><i class="las la-sync"></i></button>
+                </div>
+                <div class="product-card__body">
+                  <h6 class="title"><a href="#">VR Box 2.0 Virtual Reality 3d glasses - Cloth Stand</a></h6>
+                  <span>$550</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="banner">
+      <div class="container">
+        <div class="ptb">
+          <a href="#">
+            <img src="./img/banner-img/banner.jpg" alt="banner" class="img-fluid banner-img" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ************ best selling ************** -->
+    <section class="best-selling-section">
+      <div class="container">
+        <div class="ptb">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="product-card-v2 shadow">
+                <div class="row align-items-center">
+                  <div class="col-md-5">
+                    <img src="./img/New folder/alarm-clock-kitchen-timer.jpg" class="img-fluid rounded-start product-card-v2__img" alt="..." />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="product-card-v2__body">
+                      <h4>Card title</h4>
+                      <p>This is a wider card with supporting</p>
+                      <span>$250</span>
+                      <a href="#" class="btn-sm rounded-pill">Used</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col">
+              <div class="card">
+                <div class="row g-0 align-items-center">
+                  <div class="col-md-5">
+                    <img src="./img/New folder/4alarm-clock-kitchen-timer.jpg" class="img-fluid rounded-start shadow" alt="..." />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

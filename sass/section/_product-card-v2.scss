@@ -1,0 +1,11 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.product-card-v2 {
+  border-radius: 12px;
+  &__img {
+  }
+  &__body {
+    padding: 2rem;
+  }
+}

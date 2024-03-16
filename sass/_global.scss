@@ -1,0 +1,161 @@
+@use "./custom" as *;
+@use "./components/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  color: $gray-900;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  font-size: 1rem;
+  // letter-spacing: 0.05rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.ptb {
+  padding: 3.8rem 0;
+}
+.pb {
+  padding-bottom: 3.8rem;
+}
+.pt {
+  padding-top: 3.8rem;
+}
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .ptb {
+    padding: 3.5rem 0;
+  }
+  .pb {
+    padding-bottom: 3.5rem;
+  }
+  .pt {
+    padding: 3.5rem 0;
+    padding-top: 3.5rem;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .ptb {
+    padding: 3.5rem 0;
+  }
+  .pb {
+    padding-bottom: 4rem;
+  }
+  .pt {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .ptb {
+    padding: 3rem 0;
+  }
+  .pb {
+    padding-bottom: 4rem;
+  }
+  .pt {
+    padding-top: 4rem;
+  }
+}
+// @media (max-width: 767px) {
+//   h1 {
+//     font-size: 2.2rem;
+//   }
+//   h2 {
+//     font-size: 2rem;
+//   }
+//   h3 {
+//     font-size: 1.8rem;
+//   }
+//   h4 {
+//     font-size: 1.2rem;
+//   }
+//   h5 {
+//     font-size: 1.4rem;
+//   }
+//   h6 {
+//     font-size: 1.2rem;
+//   }
+// }

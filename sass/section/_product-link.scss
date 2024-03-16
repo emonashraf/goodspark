@@ -1,0 +1,50 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.product-link {
+  .product-link-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $gray-200;
+    border-radius: 30px;
+    @include transition-md;
+    &:hover {
+      @include shadow-1;
+      &::after {
+        visibility: visible;
+        opacity: 1;
+        @include transition-sm;
+      }
+    }
+    &::after {
+      @include transition-md;
+      opacity: 0;
+      visibility: hidden;
+      content: "\f105";
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      font-size: 1.5rem;
+      position: absolute;
+      color: $gray-600;
+      right: 0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &__img {
+      height: 50px;
+      width: 50px;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      color: $gray-700;
+      font-size: 1rem;
+      margin-left: 1rem;
+      padding: 0 0.5rem;
+    }
+  }
+}
