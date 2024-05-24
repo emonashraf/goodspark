@@ -1,10 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-/*!
- * Bootstrap  v5.3.1 (https://getbootstrap.com/)
+
+ /* * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
+ 
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -4344,7 +4343,7 @@ textarea.form-control-lg {
   --bs-card-height: ;
   --bs-card-color: ;
   --bs-card-bg: var(--bs-body-bg);
-  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-categories-banner-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
@@ -4443,13 +4442,13 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
 }
 
-.card-img-overlay {
+.card-categories-banner {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: var(--bs-card-img-overlay-padding);
+  padding: var(--bs-card-categories-banner-padding);
   border-radius: var(--bs-card-inner-border-radius);
 }
 
@@ -12333,7 +12332,7 @@ h6 {
   bottom: 1.5rem;
 }
 
-.product-link .product-link-item {
+.product-categories .product-categories-item {
   position: relative;
   display: flex;
   align-items: center;
@@ -12341,15 +12340,15 @@ h6 {
   border-radius: 30px;
   transition: all 0.5s ease;
 }
-.product-link .product-link-item:hover {
+.product-categories .product-categories-item:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
-.product-link .product-link-item:hover::after {
+.product-categories .product-categories-item:hover::after {
   visibility: visible;
   opacity: 1;
   transition: all 0.3s ease;
 }
-.product-link .product-link-item::after {
+.product-categories .product-categories-item::after {
   transition: all 0.5s ease;
   opacity: 0;
   visibility: hidden;
@@ -12363,18 +12362,18 @@ h6 {
   top: 50%;
   transform: translateY(-50%);
 }
-.product-link .product-link-item__img {
+.product-categories .product-categories-item__img {
   height: 50px;
   width: 50px;
 }
-.product-link .product-link-item__img img {
+.product-categories .product-categories-item__img img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.product-link .product-link-item__text {
+.product-categories .product-categories-item__text {
   color: #495057;
   font-size: 1rem;
   margin-left: 1rem;

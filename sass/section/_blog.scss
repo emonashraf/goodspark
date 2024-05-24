@@ -1,0 +1,80 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+.blog-card {
+  &:hover{
+    .blog-btn{
+     color: $primary;
+    }
+  }
+  &__img{
+    border-radius: .5rem;
+  }
+  &__body{
+    margin: 1rem 0;
+    .list {
+      li {
+        color: $gray-700;
+      }
+    }
+    .text{
+      margin-bottom: 0;
+      font-size: 0.875rem;
+      @include line-clamp;
+      color: $gray-700;
+    }
+    .blog-btn{
+      display: block;
+      text-decoration: underline;
+     line-height: 1;
+    }
+  }
+  .comment-action{
+    .nav-item{
+      font-size: 0.875rem;
+      .action-btn{
+        
+        &:hover{
+          text-decoration: underline;
+          color: $primary;
+        }
+      }
+    }
+  }
+  .reply-comment-list{
+    padding-left: 4rem;
+    margin-top: 1rem;
+  }
+  p{
+    color: $gray-600;
+  }
+  
+}
+.quate{
+  position: relative;
+  &::before{ 
+    content: "\f10d";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 2.5rem;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    color: $primary;
+     margin-top: .5rem;
+     margin-left: -2.5rem;
+  }
+  &::after{
+    content: "\f10e";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 2.5rem;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    color: $primary;
+    margin-top: .5rem;
+     margin-right: -2.5rem;
+  }
+}

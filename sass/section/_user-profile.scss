@@ -1,0 +1,126 @@
+
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+
+
+.user-profile{
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.hover-primary{
+    a{
+      padding: .6rem 1rem;
+      transition: all 0.5s ease;
+      background-color: transparent;
+      border-radius: 30px;
+      
+      &:hover{
+        background-image: linear-gradient(120deg, #047edf 0%, #0bb9fa 100%);
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+    }
+    .active{
+        background-image: linear-gradient(120deg, #047edf 0%, #0bb9fa 100%);
+        color: #fff;
+      transition: all 0.3s ease;
+      
+    }
+    
+  }
+.admin-profile{
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+   
+  }
+  .user-info-1 {
+    background-image: linear-gradient(120deg, #f85108 0%, #f4ad3c 100%);
+    .info-btn-1 {
+      background-image: linear-gradient(120deg, #f85108 0%, #f4ad3c 100%);
+      &:hover {
+        background-image: linear-gradient(120deg, #f4ad3c 0,#f85108 100%);
+      }
+    }
+  }
+  .user-info-2{
+    background-image: linear-gradient(to right, #047edf 0%, #0bb9fa 100%);
+    .info-btn-2{
+      background-image: linear-gradient(to right, #047edf 0%, #0bb9fa 100%);
+      &:hover{
+        background-image: linear-gradient(to right, #0bb9fa 0%, #047edf 100%);
+      }
+    }
+  }
+  .user-info-3 {
+    background-image: linear-gradient(to right, #00ba00 0%,  #64F44D 100%);
+    .info-btn-3 {
+      background-image: linear-gradient(to right, #00ba00 0%,  #84FF6A 100%);
+      &:hover {
+        background-image: linear-gradient(to right, #64F44D 0%, #00ba00 100%);
+      }
+    }
+  }
+  .user-info-4 {
+    background-image: linear-gradient(to right, #5a49e9 0%, #7a6cf0 100%);
+    .info-btn-4 {
+      background-image: linear-gradient(to right, #5a49e9 0%, #7a6cf0 100%);
+      &:hover {
+        background-image: linear-gradient(to right, #7a6cf0 0%, #5a49e9 100%);
+      }
+    }
+  }
+  .user-info-5 {
+    background-image: linear-gradient(to right, #cf0633 0%, #f96079 100%);
+    .info-btn-5 {
+     background-image: linear-gradient(to right, #cf0633 0%, #f96079 100%);
+      &:hover {
+        background-image: linear-gradient(to right, #f96079 0%, #cf0633 100%);
+      }
+    }
+  }
+  .user-info-6 {
+    background-image: linear-gradient(to right, #0fa49b 0%, #03dbce 100%);
+    .info-btn-6 {
+      background-image: linear-gradient(to right, #0fa49b 0%, #03dbce 100%);
+      &:hover {
+        background-image: linear-gradient(to right, #03dbce 0%, #0fa49b 100%);
+      }
+    }
+  
+    
+  }
+  .user-info{
+  //  background-color: #F75409;
+  
+   color: #fff;
+   padding: 2.5rem;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   .title{
+    font-size: 1.5rem;
+    font-weight: 400;
+   }
+   .info-btn{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+   }
+   .number{
+    font-size: 2.4rem;
+   }
+   i{
+    font-size: 5rem;
+   }
+  }

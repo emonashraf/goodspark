@@ -1,60 +1,50 @@
 @use "../custom" as *;
 
-.categories-menu {
-  border: 1px solid $gray-200;
+.hero-section{
+  overflow: hidden;
+ .hero-container{
+  @include media-breakpoint-down(md) {
+    min-width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
-  .nav-item {
-    padding: 0.7rem 1.5rem;
   }
-}
-.hero {
+ }
+.hero-v1{
+  margin-top: 16px;
+  gap: 1rem;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto auto;
-  // grid-template: 2fr 2fr 1fr / 1fr 4fr 1fr;
-  // grid-template-columns: 1fr 4fr 1fr 1fr;
-  // grid-template-rows: 2fr 2fr 1fr 1fr;
   grid-template-areas:
-    "m m c c c c c c c c l l"
-    "m m c c c c c c c c r r";
+    "m m h h h h h h t t"
+    "m m h h h h h h b b";
+  @include media-breakpoint-down(xl) {
+    grid-template-areas:
+      "m m m h h h h h h h"
+      "t t t t t b b b b b";
+  }
+  @include media-breakpoint-down(lg) {
+    margin-top: 0;
+    grid-template-areas:
+      "h h h h h h h h h h"
+      "t t t t t b b b b b";
+  }
   &__item-1 {
     grid-area: m;
-  }
-
-  &__item-2 {
-    grid-area: c;
-    background-color: red;
-    .hero-slider {
-      .hero-slider-item {
-        position: relative;
-
-        img {
-          width: 100%;
-          height: auto !important;
-          vertical-align: top;
-        }
-        .hero-cotnent {
-          position: absolute;
-          top: 0;
-          padding: 6rem 5rem;
-          text-align: left;
-          .title-1 {
-            letter-spacing: 0.2rem;
-            color: $gray-300;
-          }
-          .title-2 {
-            color: $gray-100;
-          }
-        }
-        .text {
-          color: $gray-400;
-        }
-      }
+    position: relative;
+  
+    @include media-breakpoint-down(lg) {
+      display: none;
     }
   }
+  
+  &__item-2 {
+    grid-area: h;
+  }
   &__item-3 {
-    grid-area: l;
+    grid-area: t;
     img {
       width: 100%;
       height: 100%;
@@ -63,43 +53,93 @@
   }
 
   &__item-4 {
-    grid-area: r;
+    grid-area: b;
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+    }
+  }
+  
+}
+.hero {
+   .nav-categories {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -26px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-style: solid;
+      border-width: 13px 15px;
+      border-color: transparent;
+      border-bottom-color: $gray-200;
+      z-index: 0;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: -23px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 12px 14px;
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: #fff;
+      z-index: 0;
+    }
+  }
+  .hero-slider {
+    .hero-slider-item {
+      border-radius: 0.5rem;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        min-height: 505px;
+        display: inline-block;
+        @include media-breakpoint-down(lg) {
+          height: 100%;
+          min-height:  350px;
+        }
+      }
+      .hero-cotnent {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5rem;
+        @include media-breakpoint-down(sm) {
+          left: 1rem;
+        }
+        text-align: left; 
+        .title-1 {
+          letter-spacing: 0.2rem;
+          color: $gray-300;
+        }
+        .title-2 {
+          color: $gray-100;
+        }
+      }
+      .text {
+        color: $gray-400;
+      }
+      .hero-btn {
+        margin-top: 2.5rem;
+      }
     }
   }
   .slick-slider {
-    margin-bottom: 0 !important;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
   }
   .slick-dots {
-    position: absolute;
-    bottom: 2rem;
-    margin-bottom: 0;
+    width: 100%;
+    bottom: 6%;
   }
   .slick-slide {
     padding: 0;
+    margin: 0;
   }
-  .slider {
-    margin: 0 auto;
-  }
-  .slider img {
-    height: auto;
-  }
-  // .slide {
-  //   padding: 0;
-  // }
+}
+}
 
-  // .slick-list {
-  //   overflow: hidden;
-  // }
-}
-.slick-slider {
-  margin-bottom: 0;
-}
-/* Custom styles for the slides */
-.slick-slide img {
-  width: 100%; /* Ensure images fill the slider container */
-  height: 100%; /* Maintain aspect ratio */
-}

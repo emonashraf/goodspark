@@ -1,0 +1,58 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+.best-deals-section {
+  overflow: hidden;
+  .best-dels-col {
+    position: relative;
+  }
+
+  .slide {
+    .slide-arrow {
+      position: absolute;
+      font-size: 1.4rem;
+      text-align: center;
+      cursor: pointer;
+    }
+    .preve_arrow {
+      top: -2.2rem;
+      right: -80%;
+      @include media-breakpoint-down(lg) {
+        right: -90%;
+      }
+      @include media-breakpoint-down(sm) {
+        right: -80%;
+      }
+    }
+    .next_arrow {
+      top: -2.2rem;
+      right: 0.5rem;
+    }
+  }
+}
+.categories-banner{
+  &:hover{
+    .banner-text{
+      opacity: 1;
+      visibility: visible;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  }
+  .banner-text{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+}

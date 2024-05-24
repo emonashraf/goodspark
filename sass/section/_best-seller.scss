@@ -1,0 +1,35 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+.seler-card {
+  border: 1px solid $gray-200;
+  padding: 1.5rem;
+  border-radius: 5px;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 130px;
+      height: 130px;
+      padding: 1rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid $gray-200;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    }
+  }
+  &__body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    margin-top: 1rem;
+    .link{
+      font-size: .9rem;
+    }
+  }
+}

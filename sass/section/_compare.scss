@@ -1,0 +1,68 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+.compare-section{
+    table{    
+      border-collapse: separate;
+      border-spacing: 0;
+      tr{
+        &:first-child{
+          th{
+            &:first-child{
+              border-top: 1px solid $gray-300;
+            }
+          }
+          td{
+            &:last-child{
+                border-top-right-radius: 6px;      
+            }
+          }
+        }
+        &:last-child{
+          th{
+            &:first-child{
+              border-bottom-left-radius: 6px;
+            }
+          }
+        }
+        th {
+          border-bottom: 1px solid $gray-300;
+          border-top: none;    
+         }
+       
+       
+     .rating{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+              
+      }
+       
+     
+    }
+    .compare-card{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        &__img-box{
+            position: relative;
+            img{
+               max-width: 280px;
+            }
+            .close-btn{
+              position: absolute;
+              right: 0;
+              top: 0;
+              font-size: 1.2rem;
+            }
+        }
+    }
+   
+}
+
+  
+ 

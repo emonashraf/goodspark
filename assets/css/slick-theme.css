@@ -1,8 +1,15 @@
+:root {
+  --primary: #0096ff;
+  --gray: #6c757d;
+}
 /* Slider */
-/* .slick-slide {
-  padding: 0 15px;
+.slick-slide {
+  padding: 0;
+  margin: 0;
+  padding-left: .5rem;
+  padding-right: .5rem;
  
-} */
+}
 
 /* Arrows */
 .slick-prev,
@@ -36,6 +43,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
+  color: var(--primary);
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
@@ -45,10 +53,10 @@
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   opacity: 0.75;
-  color: #008080;
+  color: var(--gray);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -166,12 +174,12 @@
   text-align: center;
 
   opacity: 0.25;
-  color: #008080;
+  color: var(--primary);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
-  color: #008080;
+  color: var(--primary);
 }

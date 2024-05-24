@@ -1,0 +1,53 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+.action-list-offcanvas{
+    .offcanvas-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .offcanvas-title{
+        font-weight: 600;
+      }
+      .offcanvas-btn {
+        font-size: 1.5rem;
+      }
+    }
+   
+  }
+  .offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+.shopping-cart{
+    display: grid;
+    grid-template-columns: 80px 1fr ;
+    align-items: center;
+    
+    &__body{
+        // padding: 1rem;
+        .wrapper{
+            display: flex;
+            gap: 5px;
+           align-items: start;
+           .close-btn{
+            line-height: 0;
+           }
+           .title{
+            @include line-clamp-1;
+            font-size: .9rem;
+            margin-bottom: .5rem;
+        }
+        }    
+    }
+    
+}
+.offcanvas-footer{
+    border-top: 1px solid $gray-300;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}

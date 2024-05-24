@@ -1,4 +1,114 @@
 @use "../custom" as *;
+@use "../components/mixins" as *;
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+.fs-14 {
+  font-size: 0.875rem;
+}
+.fs-18 {
+  font-size: 1.2rem;
+}
+.fs-28{
+  font-size: 1.8rem;
+}
+.fs-32{
+  font-size: 2rem;
+  @include media-breakpoint-down(md) {
+    font-size: 1.3rem;
+  }
+}
+.img-48 {
+  width: 3rem;
+  height: 3rem;
+}
+.img-64 {
+  width: 4rem;
+  height: 4rem;
+}
+.img-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-hover-overlay{
+  @include img-overlay;
+  &:hover{
+    &::before{
+      opacity: .4; 
+      visibility: visible;
+    }
+   }
+  &::before{
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 6px; 
+  }
+ 
+}
+.img-overlay{
+  @include img-overlay;
+  &::before{
+    opacity: .3;
+    border-radius: 6px; 
+  }
+}
+.border-gray {
+  border: 1px solid $gray-300;
+  border-radius: 5px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.line-clamp {
+  @include line-clamp;
+}
+.line-clamp-1 {
+  @include line-clamp-1;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.small-img {
+  max-width: 120px;
+}
+
+.user-img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .section-header {
   width: 100%;
   display: flex;
@@ -6,41 +116,26 @@
   align-items: center;
   padding-bottom: 1.5rem;
 }
+
+//
+
 // search-box
-.search-box {
-  padding: 0.4rem 1.3rem !important;
+
+.d-visible {
+  @include d-visible;
 }
-
-.input-group {
-  padding: 0;
-  .search-box {
-    border-right: none;
-    border-radius: 50rem;
-    &:focus {
-      border-right: none;
-      ~ .input-group-text {
-        border-color: $primary;
-      }
-    }
-  }
-  .search-icon {
-    background-color: transparent;
-    border-radius: 50rem;
-
-    padding: 0.4rem 1.3rem;
-    i {
-      font-size: 1.6rem;
-      transform: rotate(-90deg);
-      color: $gray-600;
-    }
-  }
+.d-invisible {
+  @include d-invisible;
 }
-
-.search-box,
-.form-check-input {
+.la-search {
+  transform: rotate(-90deg);
+  font-size: 1.3rem;
+}
+.btn-close {
   &:focus {
-    border: 1px solid $primary;
     box-shadow: none;
   }
 }
-//end of  search-box
+.btn-close {
+  color: $white !important;
+}
