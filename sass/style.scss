@@ -6,6 +6,7 @@
 @use "./layout/top-nav";
 @use "./layout/header";
 @use "./layout/nav";
+@use "./section/slick-slider";
 @use "./section/wishlist";
 @use "./section/compare";
 @use "./section/checkout";
@@ -14,7 +15,6 @@
 @use "./section/shopping-chart";
 @use "./section/form";
 @use "./section/hero";
-@use "./section/product-categories";
 @use "./section/product-card";
 @use "./section/countdown";
 @use "./section/product-card-v2";

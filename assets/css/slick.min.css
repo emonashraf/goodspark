@@ -1,7 +1,6 @@
 /* Slider */
 .slick-slider {
   margin: 0 -8px;
-  
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -19,7 +18,6 @@
   overflow: hidden;
   display: block;
   margin: 0;
-  padding: 0;
 }
 .slick-list:focus {
   outline: none;

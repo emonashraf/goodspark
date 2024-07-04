@@ -1,17 +1,9 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 
-.product-card-v2-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .product-card-v2 {
   // border: 1px solid $gray-200;
-  // border-radius: 5px;
- 
-  
+  border-radius: 6px;
   &__body {
     height: 100%;
     display: flex;

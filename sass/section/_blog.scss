@@ -1,7 +1,10 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 @use "../components/variable" as *;
-
+.blog-details-img{
+  max-height: 600px;
+  
+}
 .blog-card {
   &:hover{
     .blog-btn{

@@ -1,0 +1,47 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+.slide {
+   
+    .slide-arrow {
+      font-size: 1.8rem;
+      text-align: center;
+      cursor: poRoboto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.5s ease;
+    
+      &:hover {
+        color: $primary;
+      }
+    }
+    .preve_arrow {
+      left: -2rem;
+      @include media-breakpoint-down(lg) {
+        left: -1.5rem;
+      }
+      @include media-breakpoint-down(md) {
+        left: -1.5rem;
+      }
+      @include media-breakpoint-down(sm) {
+        left: 0;
+      }
+    }
+    .next_arrow {
+      right: -2rem;
+      transform: translateY(-50%);
+  
+      @include media-breakpoint-down(lg) {
+        right: -1.5rem;
+      }
+      @include media-breakpoint-down(md) {
+        right: -1rem;
+      }
+      @include media-breakpoint-down(sm) {
+        right: 0;
+      }
+    }
+  }
+  

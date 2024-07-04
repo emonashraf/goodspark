@@ -1,6 +1,10 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 
+
+.d-hide{
+  display: none;
+}
 .fs-12 {
   font-size: 0.75rem;
 }
@@ -10,55 +14,119 @@
 .fs-18 {
   font-size: 1.2rem;
 }
-.fs-28{
+.fs-28 {
   font-size: 1.8rem;
 }
-.fs-32{
+.fs-32 {
   font-size: 2rem;
   @include media-breakpoint-down(md) {
     font-size: 1.3rem;
   }
 }
-.img-48 {
+.fs-36 {
+  font-size: 2.25rem;
+}
+.hw-48 {
   width: 3rem;
   height: 3rem;
 }
-.img-64 {
+.hw-64 {
   width: 4rem;
   height: 4rem;
+  border-radius: 6px;
 }
-.img-cover{
+.hw-80 {
+  width: 5rem;
+  height: 5rem;
+}
+.hw-100{
+  width: 6.25rem;
+  height: 6.25rem;
+}
+.hw-120{
+  max-height: 7.5rem;
+  max-width: 7.5rem;
+}
+.hw-140{
+  height: 8.75rem;
+  width: 8.75rem;
+}
+.img-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.img-hover-overlay{
-  @include img-overlay;
-  &:hover{
-    &::before{
-      opacity: .4; 
+.hover-overlay {
+  @include overlay;
+  &:hover {
+    &::before {
+      opacity: 0.4;
       visibility: visible;
+      background-color: #000;
     }
-   }
-  &::before{
+  }
+  &::before {
     opacity: 0;
     visibility: hidden;
-    border-radius: 6px; 
+    border-radius: 6px;
   }
- 
 }
-.img-overlay{
-  @include img-overlay;
-  &::before{
-    opacity: .3;
-    border-radius: 6px; 
+.overlay {
+  @include overlay;
+  &::before {
+    opacity: 0.3;
+    border-radius: 6px;
+    background-color: #000;
+  }
+}
+.primary-overlay {
+  @include overlay;
+  &::before {
+    background-color: $primary;
+    opacity: 0.4;
+    border-radius: 6px;
+  }
+}
+.hover-primary-overlay{
+  @include overlay;
+  &:hover {
+    &::before {
+      opacity: 0.4;
+      visibility: visible;
+      background-color: $primary;
+    }
+  }
+  &::before {
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 6px;
   }
 }
 .border-gray {
   border: 1px solid $gray-300;
-  border-radius: 5px;
+  border-radius: 6px;
 }
-
+.hover-scale{
+  transition: all 0.5s ease;
+  &:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+ 
+  }
+}
+.hover-link{
+  transition: all 0.5s ease ;
+  &:hover{
+    
+      a{
+        color: $primary;
+      }
+     
+    
+  }
+  
+  
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -75,7 +143,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 .flex-justify-center {
   display: flex;
@@ -87,25 +155,45 @@
   align-items: center;
   gap: 10px;
 }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .flex-between-start {
   display: flex;
   justify-content: space-between;
   align-items: start;
   width: 100%;
 }
-.small-img {
-  max-width: 120px;
-}
 
-.user-img {
-  width: 80px;
-  height: 80px;
-  border: 2px solid $primary;
-  border-radius: 50%;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.grid-box {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  gap: 1rem;
+  align-items: start;
+  .title {
+    font-size: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.grid-box-sm{
+  display: grid;
+  grid-template-columns: 3fr 12fr;
+  gap: 1rem;
+  align-items: start;
+  @include media-breakpoint-down(xl) {
+    grid-template-columns: 4fr 8fr;
+  }
+  .title {
+    font-size: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -117,7 +205,6 @@
   padding-bottom: 1.5rem;
 }
 
-//
 
 // search-box
 

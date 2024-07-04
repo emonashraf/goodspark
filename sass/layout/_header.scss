@@ -2,90 +2,85 @@
 @use "../components/mixins" as *;
 @use "../components/variable" as *;
 
-
 .header {
-  @include media-breakpoint-down(md) {
+  z-index: 999;
+}
+
+.top-header {
+  @include media-breakpoint-down(lg) {
     box-shadow: $box-shadow-sm;
   }
-    .search-box {
-      position: relative;
-      width: 100%;
-      max-width: 56rem;
-      .search-icon {
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: transparent;
-
-        i {
-          font-size: 1.6rem;
-          transform: rotate(-90deg);
-          color: $gray-500;
-        }
-      }
-    }
-
-    .mbl-search-btn {
-      @include media-breakpoint-up(md) {
-        @include d-invisible;
-      }
-      i {
-        font-size: 1.5rem;
-        transform: translateY(-50%);
-        transform: rotate(-90deg);
-      }
-    }
-
-    .mbl-search-box-wrapper {
+  .search-box {
+    position: relative;
+    width: 100%;
+    .search-icon {
       position: absolute;
-      width: 100%;
-      left: 0;
-      right: 0;
-      top: 1px;
-      display: none;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
 
-      @include media-breakpoint-up(md) {
-        @include d-invisible;
+      i {
+        font-size: 1.6rem;
+        transform: rotate(-90deg);
+        color: $gray-500;
       }
-      .mbl-search-box {
-        padding: 0.69rem 1rem;
-        display: flex;
-        gap: 1rem;
-        align-items: center;
+    }
+  }
+  .mbl-search-btn {
+    @include media-breakpoint-up(md) {
+      display: none;
+      @include d-invisible;
+    }
+    i {
+      font-size: 1.5rem;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .mbl-search-box-wrapper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    @include media-breakpoint-up(md) {
+      @include d-invisible;
+    }
+    .mbl-search-box {
+      padding: 0.95rem 0.5rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      width: 100%;
+      background-color: $white;
+      position: relative;
+      .search-close-btn {
+        font-size: 1.3rem;
+      }
+      .secrch-btn {
+        font-size: 1.3rem;
+      }
+
+      .form {
         width: 100%;
-        background-color: $white;
-
-        i {
-          font-size: 1.3rem;
-        }
-        .form {
-          flex-grow: 5;
-
-          .mobile-search-input {
-            width: 100%;
-            padding: 0;
-            border: none;
-            border-radius: 0;
-            &:focus {
-              box-shadow: none;
-            }
+        .mobile-search-input {
+          display: inline-block;
+          padding: 0.3rem;
+          border: none;
+          border-radius: 0;
+          &:focus {
+            box-shadow: none;
           }
         }
       }
     }
-  
-  .product-action {
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
   }
- 
 }
 .product-action {
-  display: flex;
-  justify-content: end;
-  gap: 1rem;
+  // display: flex;
+  // justify-content: end;
 
   .action-list {
     position: relative;
@@ -125,7 +120,7 @@
       color: #fff;
       background-color: $black;
       padding: 0.3rem 0.5rem;
-      border-radius: 5px;
+      border-radius: 6px;
       z-index: 1;
 
       &:after {

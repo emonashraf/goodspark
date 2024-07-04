@@ -1,22 +1,20 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 @use "../components/variable" as *;
-// .secected{
-//   background-color: $primary;
-// }
+
 .top-nav {
   .custom-select {
-    &-selected-item {  
+    &-selected-item {
       &::after {
-        left: 100%; 
+        left: 100%;
       }
     }
     &-list {
-      min-width: 150px;  
+      min-width: 150px;
     }
   }
   &__right {
-    a {
+    .helpline {
       color: $gray-700;
       font-size: 0.9rem;
       font-weight: 200;
@@ -28,6 +26,7 @@
   display: inline-block;
 
   &.open {
+    position: relative;
     .custom-select-list {
       display: block;
     }
@@ -40,6 +39,7 @@
   &-selected-item {
     position: relative;
     font-size: 0.875rem;
+    color: $gray-700;
     cursor: pointer;
     display: block;
     width: 100%;
@@ -47,9 +47,13 @@
       content: "\f107";
       position: absolute;
       right: 0;
+      top: 50%;
+      transform: translateY(-50%);
       font-family: "Line Awesome Free";
+      color: $gray-700;
       font-weight: 900;
-      margin-left: 0.6rem;
+      margin-left: 0.2rem;
+      font-size: 0.8rem;
       line-height: 1.8;
       transition: transform 0.5s;
     }
@@ -60,13 +64,15 @@
     display: none;
     position: absolute;
     left: 0;
-    top: 2.5rem;
+    top: 1.3rem;
     background-color: $white;
-    z-index: 999999;
     border-radius: 6px;
+    font-size: 0.8rem;
     @include border-gray-300;
+    z-index: 9999999;
 
     &-item {
+      position: relative;
       padding: 3px 15px;
       cursor: pointer;
       &.selected {

@@ -53,7 +53,6 @@
     align-items: center;
     gap: 5px;
     background-color: $white;
-    padding: 1.5rem;
     border-radius: 6px;
     @include media-breakpoint-down(lg) {
       padding: 1rem;
@@ -77,6 +76,7 @@
         border-radius: 50%;
         background-color: $primary;
         box-shadow: 0 0 20px $primary, 0 0 60px $primary;
+       
       }
     }
    .time-number{
@@ -92,7 +92,6 @@
       font-size: .6rem;
       font-weight: 400;
       letter-spacing: 0.1rem;
-
       text-transform: uppercase;
     }
    }
@@ -105,9 +104,7 @@
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    
+    align-items: center; 
     svg{
       position: relative;
       width: 80px;
@@ -131,7 +128,7 @@
     }
   
   }
-  .new-year{
+  .countdown-end{
     font-size: 2rem;
     font-weight: 500;
     color: $primary;
@@ -142,6 +139,24 @@
       font-weight: 300;
     }
   }
+  @media (max-width: 400px) { 
+    .circle{
+      max-height: 50px;
+      max-width: 50px;
+    }
+    .time-number{
+      font-size: 1rem;
+    }
+    svg{
+      display: none;
+    }
+    #time{
+      .dots{
+        display: none;
+      }
+    }
+    
+   }
   
   
   
