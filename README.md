@@ -1,3 +1,3 @@
 # Multi Vendor Ecommerce Website Template
 ## Home Page
-![img](https://imgur.com/rxZpCid)
+[Imgur](https://imgur.com/rxZpCid)
