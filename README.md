@@ -1,3 +1,3 @@
-# High Yield Investment Program HTML Template
+# Multi Vendor Ecommerce Website Template
 ## Home Page
-![img](https://i.imgur.com/K4v8yfK.jpg)
+![img](https://imgur.com/rxZpCid)
