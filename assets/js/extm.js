@@ -98,7 +98,7 @@
 						}
 					}
 					else if (options.loadingImage) {
-						var loadingElement = $( "<div class='loadingElement' style='pointer-events:none;height:"+smallHeight+"px;width:"+smallWidth+"px;font-family:sans-serif;position:absolute;top:"+offset.top+"px;left:"+offset.left+"px;visibility:hidden;background:rgba(255,255,255,0.5);color:black;font-size:2em;font-weight:bold;text-align:center;'><img style='position: absolute; left: 50%;top: 50%;transform: translate(-50%, -50%);' src='"+options.loadingImage+"'/></div>" );
+						var loadingElement = $( "<div class='loadingElement' style='pointer-events:none;height:"+smallHeight+"px;width:"+smallWidth+"px;font-family:sans-serif;position:absolute;top:"+offset.top+"px;left:"+offset.left+"px;visibility:hidden;background:rgba(255,255,255,0.5);color:black;font-size:2em;font-weight:bold;text-align:center;'><img style='position: absolute; left: 50%;top: 50%;transform: translate(-50%, -50%);' src='"+options.loadingImage+"'></div>" );
 						$('body').append( loadingElement );
 						imageElement.on('mouseenter', function(){
 							loadingElement.css("visibility","visible");

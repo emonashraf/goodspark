@@ -1,0 +1,3847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoodsPark</title>
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/cssanimation.min.css">
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+  <!-- ************* top nav **************** -->
+  <div class="top-nav-section bg-white">
+    <div class="top-nav py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <div class="custom-select language-select">
+              <span class="custom-select-selected-item">Bangla</span>
+              <ul class="custom-select-list">
+                <li class="custom-select-list-item">English</li>
+                <li class="custom-select-list-item selected">Bangla</li>
+                <li class="custom-select-list-item">French</li>
+                <li class="custom-select-list-item">Arabic</li>
+                <li class="custom-select-list-item">Chinese</li>
+              </ul>
+            </div>
+            <div class="custom-select ms-5 currency-select">
+              <span class="custom-select-selected-item">EUR</span>
+              <ul class="custom-select-list">
+                <li class="custom-select-list-item">USD</li>
+                <li class="custom-select-list-item selected">EUR</li>
+                <li class="custom-select-list-item">BDT</li>
+                <li class="custom-select-list-item">GBP</li>
+                <li class="custom-select-list-item">AED</li>
+              </ul>
+            </div>
+          </div>
+          <div class="top-nav__right">
+            <a href="#" class="helpline">Helpline +1 3459345</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************* Header  **************** -->
+  <header class="header position-sticky top-0">
+    <div class="top-header bg-white position-relative">
+      <div class="container">
+        <div class="row justify-content-between align-items-center py-3 position-relative bg-white">
+          <!-- logo -->
+          <div class="col-4 col-lg-3">
+            <div class="d-flex align-items-center gap-1 gap-md-2">
+              <button class="d-lg-none navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="las la-bars text-primary fs-28"></i>
+              </button>
+              <a class="fs-32 text-black fw-bold" href="index.html">Goods<span class="text-primary">Park</span></a>
+            </div>
+          </div>
+          <div class="col-8 col-lg-6">
+            <div class="d-flex justify-content-end d-lg-block">
+              <div class="search-box d-none d-md-block">
+                <input type="text" class="form-control py-2 px-3 d-block border-gray w-100 rounded-pill search-input"
+                  placeholder="Search..." aria-label="search">
+                <span class="search-icon"> <i class="las la-search"></i></span>
+              </div>
+              <button class="mbl-search-btn">
+                <i class="las la-search mbl-search-btn-icon"></i>
+              </button>
+              <div class="mbl-search-box-wrapper">
+                <div class="mbl-search-box">
+                  <button class="search-close-btn">
+                    <i class="las la-angle-left"></i>
+                  </button>
+                  <div class="form">
+                    <input type="text" class="form-control mobile-search-input" placeholder="Search..."
+                      aria-label="search">
+                  </div>
+                  <button class="secrch-btn">
+                    <i class="las la-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product action -->
+          <div class="col-3">
+            <ul class="product-action d-flex justify-content-end gap-0 gap-lg-3">
+              <li class="action-list d-none d-lg-block">
+                <a href="compare.html">
+                  <i class="las la-sync-alt action-list__icon"></i>
+                </a>
+              </li>
+              <li class="action-list d-none d-lg-block">
+                <a href="wishlist.html ">
+                  <i class="lar la-heart action-list__icon"></i>
+                  <div class="count">0</div>
+                </a>
+              </li>
+              <li class="action-list">
+                <div class="action-list-offcanvas">
+                  <a class="d-none d-lg-block" data-bs-toggle="offcanvas" href="#offcanvasShoppingCart" role="button"
+                    aria-controls="offcanvasShoppingCart">
+                    <i class="las la-shopping-cart action-list__icon"></i>
+                    <div class="count">0</div>
+                  </a>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasShoppingCart"
+                    aria-labelledby="offcanvasShoppingCartle">
+                    <div class="offcanvas-header bg-primary">
+                      <h3 class="offcanvas-title text-white" id="offcanvasShoppingCartle">
+                        Shopping Cart
+                      </h3>
+                      <button type="button" class="offcnavas-btn text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <i class="las la-times"></i>
+                      </button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <!-- shopping-chart -->
+                      <div class="shopping-chart-card">
+                        <div class="shopping-cart">
+                          <div class="shopping-cart__img">
+                            <img src="./img/all-product/shirt-1.jpg" alt="img" class="img-fluid">
+                          </div>
+                          <div class="shopping-cart__body">
+                            <div class="wrapper">
+                              <h6 class="title">
+                                <a href="#"> Blue Denim Long Sleeve Casual Shirt for Men </a>
+                              </h6>
+                              <button type="button" class="close-btn">
+                                <i class="las la-times"></i>
+                              </button>
+                            </div>
+                            <div class="quantity-wrapper">
+                              <div class="quantity">
+                                <button type="button" class="minus qunatity-btn">-</button>
+                                <span>0</span>
+                                <button type="button" class="plus qunatity-btn">+</button>
+                              </div>
+                              <div class="quantity">$200</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- shopping-chart -->
+                      <div class="shopping-chart-card">
+                        <div class="shopping-cart">
+                          <div class="shopping-cart__img">
+                            <img src="./img/all-product/dress-1.jpg" alt="img" class="img-fluid">
+                          </div>
+                          <div class="shopping-cart__body">
+                            <div class="wrapper">
+                              <h6 class="title">
+                                <a href="#">Exclusive Designed Gown 1Piece Long Kurti Different Koti Gown
+                                  Long Kurti For Stylish Women / Girls Dress</a>
+                              </h6>
+                              <button type="button" class="close-btn">
+                                <i class="las la-times"></i>
+                              </button>
+                            </div>
+                            <div class="quantity-wrapper">
+                              <div class="quantity">
+                                <button type="button" class="minus qunatity-btn">-</button>
+                                <span>0</span>
+                                <button type="button" class="plus qunatity-btn">+</button>
+                              </div>
+                              <div class="quantity">$150</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- shopping-chart -->
+                      <div class="shopping-chart-card">
+                        <div class="shopping-cart">
+                          <div class="shopping-cart__img">
+                            <img src="./img/all-product/wathc-1.jpg" alt="img" class="img-fluid">
+                          </div>
+                          <div class="shopping-cart__body">
+                            <div class="wrapper">
+                              <h6 class="title">
+                                <a href="#">Denim jacket for men stylish Denim jacket for men black Denim
+                                  jacket for men
+                                </a>
+                              </h6>
+                              <button type="button" class="close-btn">
+                                <i class="las la-times"></i>
+                              </button>
+                            </div>
+                            <div class="quantity-wrapper">
+                              <div class="quantity">
+                                <button type="button" class="minus qunatity-btn">-</button>
+                                <span>0</span>
+                                <button type="button" class="plus qunatity-btn">+</button>
+                              </div>
+                              <div class="quantity">$230</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offcanvas-footer d-flex">
+                      <a href="cart.html">View Cart</a>
+                      <a href="shipping-info.html">Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- item-4 -->
+              <li class="action-list">
+                <div class="action-list-offcanvas">
+                  <a class="d-none d-lg-block" data-bs-toggle="offcanvas" href="#offcanvasNotification" role="button"
+                    aria-controls="offcanvasNotification">
+                    <i class="las la-bell action-list__icon"></i>
+                    <div class="count">0</div>
+                  </a>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNotification"
+                    aria-labelledby="offcanvasNotificationLabel">
+                    <div class="offcanvas-header bg-primary">
+                      <h3 class="offcanvas-title text-white" id="offcanvasNotificationLabel">
+                        Notification
+                      </h3>
+                      <button type="button" class="offcnavas-btn text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <i class="las la-times"></i>
+                      </button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="d-flex-column  ">
+                        <!-- item-1 -->
+                        <div class="flex-between-start gap-2 closeable-item">
+                          <div class="shopping-cart__img">
+                            <img src="./img/seller/seller-1.png" alt="img" class="border-gray rounded-pill hw-48">
+                          </div>
+                          <div>
+                            <h6 class="title line-clamp-1">
+                              <a href="#"> Blue Denim Long Sleeve Casual Shirt for Men </a>
+                            </h6>
+                            <span class="fs-14 text-muted">2 hours ago</span>
+                          </div>
+                          <button type="button" class="close-btn">
+                            <i class="las la-times"></i>
+                          </button>
+                        </div>
+                        <!-- item-2 -->
+                        <div class="flex-between-start gap-2 closeable-item">
+                          <div class="shopping-cart__img">
+                            <img src="./img/seller/seller-2.png" alt="img" class="border-gray rounded-pill hw-48">
+                          </div>
+                          <div>
+                            <h6 class="title line-clamp-1">
+                              <a href="#"> Blue Denim Long Sleeve Casual Shirt for Men </a>
+                            </h6>
+                            <span class="fs-14 text-muted">2 hours ago</span>
+                          </div>
+                          <button type="button" class="close-btn">
+                            <i class="las la-times"></i>
+                          </button>
+                        </div>
+                        <!-- item-3 -->
+                        <div class="flex-between-start gap-2 closeable-item">
+                          <div class="shopping-cart__img">
+                            <img src="./img/seller/seller-3.png" alt="img" class="border-gray rounded-pill hw-48">
+                          </div>
+                          <div>
+                            <h6 class="title line-clamp-1">
+                              <a href="#"> Blue Denim Long Sleeve Casual Shirt for Men </a>
+                            </h6>
+                            <span class="fs-14 text-muted">2 hours ago</span>
+                          </div>
+                          <button type="button" class="close-btn">
+                            <i class="las la-times"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <nav class="nav-wrapper shadow-sm bg-primary">
+        <div class="container">
+          <div class="navbar-row gap-3 gap-md-4">
+            <div class="navbar-col-1 d-none d-lg-block">
+              <div class="categories-btn-v2 w-100 bg-secondary flex-between-center text-white">
+                <h5>All Categories</h5>
+                <i class="las la-angle-down categories-btn-icon"></i>
+              </div>
+              <!-- mobile-nav-categories -->
+              <div class="sidebar-nav-categories">
+                <ul class="nav-categories">
+                  <li class="nav-item">
+                    <div class="flex-between-center">
+                      <a class="nav-link d-inline-block" href="shop.html">
+                        <i class="las la-tshirt"></i>
+                        Men's Fashion
+                      </a>
+                      <i class="las la-angle-right"></i>
+                    </div>
+                    <ul class="submenu">
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title">Clothing</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shirt</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">T-Shirt</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Polo-Shirt</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Jaket</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Suit</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Shoes </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Slippers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sneakers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Cleats</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Saddle Shoes</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Snow Boots</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sandals</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title">Cosmetics</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Face Wash</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Cream</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sope</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Hair Was</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Hair Jail</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Lip Balm</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title">Winter</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Jacket</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sweater</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Blessure</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Trousers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Hand gloves</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Socks</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title">Hot Sale</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shirt</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">jacket</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Glasses</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Belts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">T-Shirt</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title">Bottom</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Jeans</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shorts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Formal Pent</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Trousers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Causal Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Black Pent</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <div class="flex-between-center">
+                      <a class="nav-link" href="#">
+                        <i class="las la-female"></i>
+                        Women Fashion
+                      </a>
+                      <i class="las la-angle-right"></i>
+                    </div>
+                    <ul class="submenu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title">Beauty & Makeup</a>
+                        <ul class="child-menu menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Concealer</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Foundation</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Lipstick</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Primer</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Wye Shadow</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Mascara</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Lip Gloss</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Highigher</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title"> Clothing</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Ball Grown</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Maxi Dress</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Mini Dress</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Skirt</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Long Coat</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shift Dress</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title">Shoes</a>
+                        <i class="las la-angle-right"></i>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Stiletto</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Pumps</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Kitten</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Comma</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Cone</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">T-Strap</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title">Cosmetics</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Face Wash</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Cream</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sope</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Hair Oil</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Face Sope</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">Hair Jail</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title">Winter</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Long Jacket</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sweater</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Blessure</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Trousers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Hand gloves</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Socks</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title">Hot Sale</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Paty Dress</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Night Dress</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">T-Shirt</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Glasses</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shirt</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Pants</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title">Bottom</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Jeans</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shorts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Formal Pent</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Trousers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Causal Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Black Pent</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <div class="flex-between-center">
+                      <a class="nav-link" href="shop.html">
+                        <i class="las la-gem"></i>
+                        Jewellery
+                      </a>
+                      <i class="las la-angle-right"></i>
+                    </div>
+                    <ul class="submenu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title"> Earrings </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Stud</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Jacket</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Ear Spike</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Plug</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Dangle</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Threader</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Chandelier</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Necklace </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Choker Necklace</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Collar Necklace</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Princess Necklace</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Matinee Necklace</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Opera Necklace</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Flapper necklaces</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Ring </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Solitaire Rings</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Lnot Rings</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Cocktail Rings</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Engement Rings</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Diamond Ring</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Eterint Rings</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Anklets </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Crystal Tennis Anklet</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Cuban Link Anklet</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Beaded Beach Anklet</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">SnakeChain Anklet</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Layered Heart Anklet</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Figaro Chain Anklet</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title"> Wedding Jewellery </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Earrings</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Bangeles</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Kamarband</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Maang Tikka</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Nose Ring</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Figaro Chain Anklet</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="las la-mobile"></i>
+                      Mobiles
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="flex-between-center">
+                      <a class="nav-link" href="#">
+                        <i class="las la-car-battery"></i>
+                        Electronics
+                      </a>
+                      <i class="las la-angle-right"></i>
+                    </div>
+                    <ul class="submenu">
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Home Appliances </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Refrigerator</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Blander</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Air Conditioner</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Washing Machine</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Televishion</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">Lamp</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Oven</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Television </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Smart Television</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">LED Televisions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Samsung Televisions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">OLED Televisions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sony Televisions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Xiami Televisions</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Computer Accessories </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Monitor</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Mouse</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Keyboar</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Processor</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Ram</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">SSD</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html">
+                      <i class="las la-tv"></i>
+                      Televisions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="flex-between-center">
+                      <a class="nav-link" href="shop.html">
+                        <i class="las la-stopwatch"></i>
+                        Watch
+                      </a>
+                      <i class="las la-angle-right"></i>
+                    </div>
+                    <ul class="submenu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title">Smart watch</a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Apple Watch</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sumsung Watch</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Huawei Watch</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Promate Watch</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Xinji Watch</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Realme Watch</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Dress Watch </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Rolex Datejust</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Timex Marlin</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Orient Bambino</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Seiko Presage</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Bulova Commodore</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Longines Fagship Heritage</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Cartier </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">The Tank</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">The Santos & Panthere</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">The Tonneau</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">The Tornue</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">The Baignoire</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">The Cle</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Chronograph </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Rolex Cosmograph Daytona</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Tag Heuer</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Monopusher Chronograph</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Flyback Chronograph</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Rattrapante Chronograph</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Most Popular Chronographs</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Rolex </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Datejust</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Submariner</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">GMT-Marter</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Day-Date</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Cyster Perpetual</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Yacht-Master</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <div class="flex-between-center">
+                      <a class="nav-link" href="shop.html">
+                        <i class="las la-headphones"></i>
+                        HeadPhones
+                      </a>
+                      <i class="las la-angle-right"></i>
+                    </div>
+                    <ul class="submenu">
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Wireless Headphones </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sony Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Apple Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Anker Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Beats Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">JBL Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title"> Open-back Headphones </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Apple Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Anker Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sony Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">JBL Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Beats Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Closed-back Headphones </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Apple Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Anker Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sony Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">JBL Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Beats Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link title"> In-ear Headphones </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Apple Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Anker Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sony Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">JBL Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Beats Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="shop.html" class="nav-link title"> Active Noise Cancelling </a>
+                        <ul class="child-menu">
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Apple Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Anker Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">Sony Headphones</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">JBL Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Beats Headphones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html">
+                      <i class="las la-tools"></i>
+                      Tools for Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html">
+                      <i class="las la-suitcase-rolling"></i>
+                      Backpack
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-col-2">
+              <div class="navbar navbar-expand-lg menu-bar cssanimation leFadeInTop">
+                <div class="container">
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header d-flex d-lg-none justify-content-between bg-primary shadow-sm">
+                      <h3 class="text-white">Menu</h3>
+                      <button type="button" class="offcnavas-btn text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <i class="las la-times"></i>
+                      </button>
+                    </div>
+                    <!-- ** nav-menu ** -->
+                    <div class="nav-menu w-100 d-lg-flex d-none">
+                      <ul class="navbar-nav flex-grow-1 nav-bar-center">
+                        <li class="nav-item">
+                          <div class="flex-align-center gap-0">
+                            <a class="nav-link" href="#">Home</a>
+                            <i class="las la-angle-down"></i>
+                          </div>
+                          <ul class="submenu">
+                            <li class="nav-item">
+                              <a href="index.html" class="nav-link">Home One</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="home-v2.html" class="nav-link">Home Two</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="home-v3.html" class="nav-link">Home Three</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-align-center gap-0">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                            <i class="las la-angle-down"></i>
+                          </div>
+                          <ul class="submenu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Shop Left Sidebar</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop-v2.html" class="nav-link">Shop Right Sidebar</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-align-center gap-0">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                            <i class="las la-angle-down"></i>
+                          </div>
+                          <ul class="submenu">
+                            <li class="nav-item">
+                              <a href="blog.html" class="nav-link">Blog Grid</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="blog-datails.html" class="nav-link">Blog-details</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-align-center gap-0">
+                            <a class="nav-link" href="#">page</a>
+                            <i class="las la-angle-down"></i>
+                          </div>
+                          <ul class="submenu">
+                            <li class="nav-item">
+                              <a href="wishlist.html" class="nav-link">Wishlist</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="cart.html" class="nav-link">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="user-profile.html" class="nav-link">User Profile</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="compare.html" class="nav-link">Compare</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="purchase-history.html" class="nav-link">Purchase History</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="reviews.html" class="nav-link">Review</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="downloads.html" class="nav-link">Download</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="login.html" class="nav-link">Login</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="register.html" class="nav-link">Register</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="forgot-password.html" class="nav-link">Forgot Password</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <ul class="d-none d-lg-flex align-items-center gap-3">
+                        <li class="nav-item text-black">
+                          <a href="login.html" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item text-white">/</li>
+                        <li class="nav-item">
+                          <a href="register.html" class="nav-link">Register</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="offcanvas-body p-lg-0 m-lg-0 d-block d-lg-none">
+                      <!-- ** nav-menu ** -->
+                      <div class="nav-menu w-100 d-flex d-flex-column flex-md-row">
+                        <ul class="navbar-nav flex-grow-1 nav-bar-center">
+                          <li class="nav-item">
+                            <div class="flex-between-center">
+                              <a class="nav-link" href="#">Home</a>
+                              <i class="las la-angle-right"></i>
+                            </div>
+                            <ul class="submenu menu">
+                              <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home One</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="home-v2.html" class="nav-link">Home Two</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="home-v3.html" class="nav-link">Home Three</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <div class="flex-between-center">
+                              <a class="nav-link" href="#">Shop</a>
+                              <i class="las la-angle-right"></i>
+                            </div>
+                            <ul class="submenu menu">
+                              <li class="nav-item">
+                                <a href="shop.html" class="nav-link">Shop Left Sidebar</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="shop-v2.html" class="nav-link">Shop Right Sidebar</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                          </li>
+                          <li class="nav-item">
+                            <div class="flex-between-center">
+                              <a class="nav-link" href="#">Blog</a>
+                              <i class="las la-angle-right"></i>
+                            </div>
+                            <ul class="submenu menu">
+                              <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Blog Grid</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="blog-datails.html" class="nav-link">Blog-details</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <div class="flex-between-center">
+                              <a class="nav-link" href="#">Page</a>
+                              <i class="las la-angle-right"></i>
+                            </div>
+                            <ul class="submenu menu">
+                              <li class="nav-item">
+                                <a href="wishlist.html" class="nav-link">Wishlist</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="cart.html" class="nav-link">Cart</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="user-profile.html" class="nav-link">User Profile</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="compare.html" class="nav-link">Compare</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="purchase-history.html" class="nav-link">Purchase History</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="reviews.html" class="nav-link">Review</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="downloads.html" class="nav-link">Download</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="login.html" class="nav-link">Login</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="register.html" class="nav-link">Register</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="forgot-password.html" class="nav-link">Forgot Password</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul class="d-none d-lg-flex align-items-center gap-3">
+                          <li class="nav-item text-black">
+                            <a href="login.html" class="nav-link">Login</a>
+                          </li>
+                          <li class="nav-item text-white">/</li>
+                          <li class="nav-item">
+                            <a href="register.html" class="nav-link">Register</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="offcanvas-footer d-flex d-lg-none">
+                      <div>
+                        <a href="login.html" class="text-decoration-underline">Login <i
+                            class="las la-arrow-right"></i></a>
+                      </div>
+                      <div>
+                        <a href="register.html" class="text-decoration-underline">Register <i
+                            class="las la-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- ************ Footer Nav ************** -->
+    <div class="footer-nav z-2">
+      <div class="container">
+        <ul class="product-action">
+          <!-- item-1 -->
+          <li class="action-list">
+            <a href="index.html">
+              <i class="las la-home action-list__icon"></i>
+            </a>
+          </li>
+          <!-- item-2 -->
+          <li class="action-list position-relative z-3">
+            <div class="action-list-offcanvas text-decoration-underline">
+              <a data-bs-toggle="offcanvas" href="#offcanvasCategories" role="button"
+                aria-controls="offcanvasCategories">
+                <i class="las la-th-large action-list__icon navbar-toggler-icon"></i>
+              </a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories"
+                aria-labelledby="offcanvasCategories">
+                <div class="offcanvas-header bg-primary">
+                  <h3 class="text-white">Categories</h3>
+                  <button type="button" class="text-white fs-18" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="las la-times"></i>
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="nav-categories">
+                    <li class="nav-item">
+                      <div class="flex-between-center">
+                        <a class="nav-link" href="shop.html">
+                          <i class="las la-tshirt"></i>
+                          Men's Fashion
+                        </a>
+                        <i class="las la-angle-right"></i>
+                      </div>
+                      <ul class="submenu menu">
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Clothing</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Pants</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">T-Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Polo-Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Jaket</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Suit</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Shoes</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Slippers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sneakers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Cleats</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Saddle Shoes</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Snow Boots</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sandals</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Cosmetics</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Face Wash</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Cream</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sope</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Hair Was</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Hair Jail</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Lip Balm</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Winter</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Jacket</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sweater</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Blessure</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Trousers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Hand gloves</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Socks</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Hot Sale</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Pants</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">jacket</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Glasses</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Belts</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">T-Shirt</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Bottom</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Jeans</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Shorts</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Formal Pent</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Trousers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Causal Pants</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Black Pent</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <div class="flex-between-center">
+                        <a class="nav-link" href="shop.html">
+                          <i class="las la-female"></i>
+                          Women Fashion
+                        </a>
+                        <i class="las la-angle-right"></i>
+                      </div>
+                      <ul class="submenu menu">
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Beauty & Makeup</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Concealer</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Foundation</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Lipstick</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Primer</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Wye Shadow</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Mascara</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Lip Gloss</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Highigher</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Clothing</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Ball Grown</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Maxi Dress</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Mini Dress</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Skirt</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Long Coat</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Shift Dress</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Shoes</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Stiletto</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Pumps</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Kitten</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Comma</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Cone</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">T-Strap</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Cosmetics</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Face Wash</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Cream</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sope</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Hair Oil</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Face Sope</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Hair Jail</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Winter</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Long Jacket</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sweater</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Blessure</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Trousers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Hand gloves</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Socks</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Hot Sale</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Paty Dress</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Night Dress</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">T-Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Glasses</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Pants</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link">Bottom</a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Jeans</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Shorts</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Formal Pent</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Trousers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Causal Pants</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Black Pent</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <div class="flex-between-center">
+                        <a class="nav-link" href="shop.html">
+                          <i class="las la-gem"></i>
+                          Jewellery
+                        </a>
+                        <i class="las la-angle-right"></i>
+                      </div>
+                      <ul class="submenu menu">
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Earrings </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Stud</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Jacket</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Ear Spike</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Plug</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Dangle</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Threader</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Chandelier</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Necklace </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Choker Necklace</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Collar Necklace</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Princess Necklace</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Matinee Necklace</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Opera Necklace</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Flapper necklaces</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Ring </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Solitaire Rings</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Lnot Rings</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Cocktail Rings</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Engement Rings</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Diamond Ring</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Eterint Rings</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Anklets </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Crystal Tennis Anklet</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Cuban Link Anklet</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Beaded Beach Anklet</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">SnakeChain Anklet</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Layered Heart Anklet</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Figaro Chain Anklet</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Wedding Jewellery </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Earrings</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Bangeles</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Kamarband</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Maang Tikka</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Nose Ring</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Figaro Chain Anklet</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">
+                        <i class="las la-mobile"></i>
+                        Mobiles
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="flex-between-center">
+                        <a class="nav-link" href="shop.html">
+                          <i class="las la-car-battery"></i>
+                          Electronics
+                        </a>
+                        <i class="las la-angle-right"></i>
+                      </div>
+                      <ul class="submenu menu">
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Home Appliances </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Refrigerator</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Blander</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Air Conditioner</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Washing Machine</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Televishion</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Lamp</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Oven</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Television </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Smart Television</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">LED Televisions</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Samsung Televisions</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">OLED Televisions</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sony Televisions</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Xiami Televisions</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Computer Accessories </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Monitor</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Mouse</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Keyboar</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Processor</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Ram</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">SSD</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">
+                        <i class="las la-tv"></i>
+                        Televisions
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="flex-between-center">
+                        <a class="nav-link" href="shop.html">
+                          <i class="las la-stopwatch"></i>
+                          Watch
+                        </a>
+                        <i class="las la-angle-right"></i>
+                      </div>
+                      <ul class="submenu menu">
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Smart watch </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Apple Watch</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sumsung Watch</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Huawei Watch</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Promate Watch</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Xinji Watch</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Realme Watch</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Dress Watch </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Rolex Datejust</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Timex Marlin</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Orient Bambino</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Seiko Presage</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Bulova Commodore</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Longines Fagship Heritage</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Cartier </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">The Tank</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">The Santos & Panthere</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">The Tonneau</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">The Tornue</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">The Baignoire</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">The Cle</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Chronograph </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Rolex Cosmograph Daytona</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Tag Heuer</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Monopusher Chronograph</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Flyback Chronograph</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Rattrapante Chronograph</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Most Popular Chronographs</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Rolex </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Datejust</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Submariner</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">GMT-Marter</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Day-Date</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Cyster Perpetual</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Yacht-Master</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <div class="flex-between-center">
+                        <a class="nav-link" href="shop.html">
+                          <i class="las la-headphones"></i>
+                          HeadPhones
+                        </a>
+                        <i class="las la-angle-right"></i>
+                      </div>
+                      <ul class="submenu menu">
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Wireless Headphones </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sony Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Apple Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Anker Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Beats Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">JBL Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="shop.html" class="nav-link"> Open-back Headphones </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Apple Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Anker Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sony Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">JBL Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Beats Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="#" class="nav-link"> Closed-back Headphones </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Apple Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Anker Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sony Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">JBL Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Beats Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="#" class="nav-link"> In-ear Headphones </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Apple Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Anker Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sony Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">JBL Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Beats Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <div class="flex-between-center">
+                            <a href="#" class="nav-link"> Active Noise Cancelling </a>
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <ul class="child-menu menu">
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Apple Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Anker Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sony Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">JBL Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Beats Headphones</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="shop.html" class="nav-link">Sennheiser Headphones</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">
+                        <i class="las la-tools"></i>
+                        Tools for Home
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">
+                        <i class="las la-suitcase-rolling"></i>
+                        Backpack
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- item-3 -->
+          <li class="action-list">
+            <div class="action-list-offcanvas">
+              <a data-bs-toggle="offcanvas" href="#offcanvasShoppingCart" role="button"
+                aria-controls="offcanvasShoppingCart">
+                <i class="las la-shopping-cart action-list__icon"></i>
+                <div class="count">0</div>
+              </a>
+            </div>
+          </li>
+          <!-- item-4 -->
+          <li class="action-list">
+            <div class="action-list-offcanvas">
+              <a data-bs-toggle="offcanvas" href="#offcanvasNotification" role="button"
+                aria-controls="offcanvasNotification">
+                <i class="las la-bell action-list__icon"></i>
+                <div class="count">0</div>
+              </a>
+            </div>
+          </li>
+          <!-- item-5 -->
+          <li class="action-list">
+            <div class="action-list-offcanvas">
+              <a data-bs-toggle="offcanvas" href="#userProfile" role="button" aria-controls="userProfile">
+                <i class="las la-user action-list__icon"></i>
+              </a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="userProfile" aria-labelledby="userProfile">
+                <div class="offcanvas-header">
+                  <a class="logo" href="#">Goods<span>Park</span></a>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                  <div class="user-profile p-0">
+                    <div class="d-flex-column gap-0 text-center">
+                      <div class="py-4">
+                        <div class="user">
+                          <input type="file" id="formFile" class="user-input d-none">
+                          <label for="formFile" class="form-label">
+                            <img src="./img/user-profile/user.png" alt="User" class="img-fluid hw-100">
+                          </label>
+                        </div>
+                        <div class="mt-2">
+                          <h4>Jhon Doe</h4>
+                          <span>345 565 67432</span>
+                        </div>
+                      </div>
+
+                      <hr class="m-0">
+                    </div>
+                    <ul class="hover-primary py-3">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="user-profile.html">
+                          <i class="las la-home"></i>
+                          <span>Dashboard</span>
+                        </a>
+                      </li>
+                      <li class="nav-item menu-item-has-children">
+                        <a class="nav-link" href="purchase-history.html">
+                          <i class="las la-calculator"></i>
+                          <span>Puschase History</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="save-card.html">
+                          <i class="las la-credit-card"></i>
+                          <span>Save Card</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="downloads.html">
+                          <i class="las la-download"></i>
+                          <span>Dowload</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="wishlist.html">
+                          <i class="lar la-heart"></i>
+                          <span>Wishlist</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="compare.html">
+                          <i class="las la-sync-alt"></i>
+                          <span>Compare</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">
+                          <i class="las la-comments"></i>
+                          <span>My Reviews</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="address.html">
+                          <i class="las la-address-card"></i>
+                          <span>My Address</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                          <i class="las la-user"></i>
+                          <span>Profile</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <hr class="m-0">
+                    <div>
+                      <div class="text-center p-3 py-4">
+                        <a href="#" class="primary-btn rounded-pill px-5 py-3">
+                          <i class="las la-sign-out-alt"></i>
+                          Logout
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ************ product datails ************** -->
+  <section class="product-datails-section ptb">
+    <div class="container">
+      <div class="product-datails">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="product-datails__img-slider">
+              <div class="slider-for">
+                <!-- item 1 -->
+                <div>
+                  <div class="product-details-img-wrap">
+                    <img src="./img/all-product/shirt-1.jpg" class="img-fluid  product-details-img"
+                      alt="Flash sale Image">
+                  </div>
+                </div>
+
+                <!-- item 2 -->
+                <div>
+                  <div class="product-details-img-wrap">
+                    <img src="./img/all-product/shirt-2.jpg" class="img-fluid product-details-img"
+                      alt="Flash sale Image">
+                  </div>
+                </div>
+
+                <!-- item 3 -->
+                <div>
+                  <div class="product-details-img-wrap">
+                    <img src="./img/all-product/shirt-3.jpg" class="img-fluid product-details-img"
+                      alt="Flash sale Image">
+                  </div>
+                </div>
+
+                <!-- item 4 -->
+                <div>
+                  <div class="product-details-img-wrap">
+                    <img src="./img/all-product/shirt-4.jpg" class="img-fluid product-details-img"
+                      alt="Flash sale Image">
+                  </div>
+                </div>
+                <!-- item 5 -->
+                <div>
+                  <div class="product-details-img-wrap">
+                    <img src="./img/all-product/shirt-5.jpg" class="img-fluid product-details-img"
+                      alt="Flash sale Image">
+                  </div>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <!-- item -1 -->
+                <div>
+                  <div class="product-details-nav">
+                    <img src="./img/all-product/shirt-1.jpg" class="img-fluid" alt="Flash sale Image">
+                  </div>
+                </div>
+
+                <!-- item -2 -->
+                <div>
+                  <div class="product-details-nav">
+                    <img src="./img/all-product/shirt-2.jpg" class="img-fluid" alt="Flash sale Image">
+                  </div>
+                </div>
+
+                <!-- item -3 -->
+                <div>
+                  <div class="product-details-nav">
+                    <img src="./img/all-product/shirt-3.jpg" class="img-fluid" alt="Flash sale Image">
+                  </div>
+                </div>
+
+                <!-- item -4 -->
+                <div>
+                  <div class="product-details-nav">
+                    <img src="./img/all-product/shirt-4.jpg" class="img-fluid" alt="Flash sale Image">
+                  </div>
+                </div>
+
+                <!-- item -5 -->
+                <div>
+                  <div class="product-details-nav">
+                    <img src="./img/all-product/shirt-5.jpg" class="img-fluid" alt="Flash sale Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="product-details__body">
+              <h3 class="title">Blue Denim Long Sleeve Casual Shirt for Men</h3>
+              <div class="reviews-box">
+                <div class="rating-wrap item">
+                  <span class="rating">
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star gray"></i>
+                  </span>
+                  <span>(4.5)</span>
+                </div>
+                <div class="item">233 Reviews</div>
+                <div class="item">443 Sold</div>
+              </div>
+              <div>
+                <span class="badge">In Stock</span>
+              </div>
+              <div class="d-flex gap-2">
+                <h4 class="title">Brand :</h4>
+                <span>Adidas</span>
+              </div>
+              <div class="price-box">
+                <div class="price">
+                  <span class="line-through">$40</span>
+                  <span> $20</span>
+                  <span class="discount">(-50%)</span>
+                </div>
+
+              </div>
+              <ul class="product-action">
+                <li class="action-list">
+                  <a href="#">
+                    <i class="las la-sync-alt action-list__icon"></i>
+                    <span class="action-list__text">Compare</span>
+                  </a>
+                </li>
+                <li class="action-list">
+                  <a href="wishlist.html">
+                    <i class="lar la-heart action-list__icon"></i>
+                    <span class="action-list__text">Wishlist</span>
+                  </a>
+                </li>
+              </ul>
+              <hr>
+              <div class="check-box sidebar-item grid-box-sm">
+                <h4 class="title flex-between-center">
+                  Size
+                  <span> : </span>
+                </h4>
+                <form class="list">
+                  <div class="form-group">
+                    <input type="checkbox" id="s">
+                    <label for="s">S</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="m">
+                    <label for="m">M</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="l">
+                    <label for="l">L</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="xl">
+                    <label for="xl">Xl</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="xxl">
+                    <label for="xxl">xxL</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="xxxl">
+                    <label for="xxxl">xxxl</label>
+                  </div>
+                </form>
+              </div>
+              <div class="check-box color-picker grid-box-sm">
+                <h4 class="title flex-between-center">
+                  Color
+                  <span> : </span>
+                </h4>
+                <form class="list toggle-able">
+                  <div class="form-group">
+                    <input type="checkbox" id="red">
+                    <label for="red"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="green">
+                    <label for="green"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="yellow">
+                    <label for="yellow"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="blue">
+                    <label for="blue"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="black">
+                    <label for="black"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="orange">
+                    <label for="orange"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="indigo">
+                    <label for="indigo"></label>
+                  </div>
+                </form>
+              </div>
+              <div class="quantity-wrapper grid-box-sm">
+                <h4 class="title flex-between-center">
+                  Quantity
+                  <span> : </span>
+                </h4>
+
+                <div class="quantity">
+                  <button type="button" class="minus qunatity-btn">-</button>
+                  <span>0</span>
+                  <button type="button" class="plus qunatity-btn">+</button>
+                  <div class="available">
+                    <span class="available-number">(45</span>
+                    <span>
+                      available)
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class=" grid-box-sm">
+                <h4 class="title flex-between-center">
+                  Total price
+                  <span> : </span>
+                </h4>
+                <span class="total-price ">$32</span>
+              </div>
+
+              <div class="grid-box-sm">
+                <h4 class="title flex-between-center">
+                  SKU
+                  <span> : </span>
+                </h4>
+                <span>GVT234</span>
+              </div>
+              <div class="grid-box-sm">
+                <h4 class="title flex-between-center">
+                  Categories
+                  <span> : </span>
+                </h4>
+                <span>Men Fashion</span>
+              </div>
+              <div class="btn-box">
+                <Button class="primary-btn me-3">
+                  <i class="las la-shopping-cart"></i>
+                  Add to Cart
+                </Button>
+                <button class="success-btn">
+                  <i class="las la-shopping-bag"></i>
+                  Buy Now
+                </button>
+              </div>
+
+              <div>
+                <h4 class="title">Details</h4>
+                <div>
+                  <div>
+                    <i class="las la-map-marker"></i>
+                    <span>Sent form</span>
+                    <span>New York, USA</span>
+                  </div>
+                  <div>
+                    <i class="las la-shipping-fast"></i>
+                    <span>Estimated Shipping</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 ">
+            <h3 class="title">Descriptions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos tempore quam quae a perferendis
+              dolores ea impedit minima doloremque porro, aperiam sequi odit suscipit similique possimus. Aperiam
+              reprehenderit reiciendis nemo doloribus sequi dolorum, dignissimos enim fugit temporibus similique quas
+              saepe natus, ratione nesciunt ipsam aliquam perspiciatis. Dolores, quisquam beatae.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pb rating-datails-section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="title">Rating & Reviews</h3>
+      </div>
+      <div class="row gy-4">
+        <div class="col-lg-9">
+          <div class="rating-wrapper d-flex-column flex-md-row position-relative pb">
+            <div class="rating-left item">
+              <div class="d-flex gap-3 ">
+                <div class="total-review">4.5</div>
+                <div class=" flex-center badge ">
+                  <i class="las la-star fs-14"></i>
+                  <span class="text-white  fs-14">Very Good</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="las la-star"></i>
+                <i class="las la-star"></i>
+                <i class="las la-star"></i>
+                <i class="las la-star"></i>
+                <i class="las la-star  gray"></i>
+              </div>
+              <div>
+                <span>169 </span>ratings
+              </div>
+            </div>
+            <div class="rating-info item">
+              <!-- item 1 -->
+              <div class="rating-item">
+                <div class="rating">
+                  <i class="las la-star"></i>
+                  <i class="las la-star "></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                </div>
+
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+                <div class="review-number">65</div>
+              </div>
+              <!-- item 2 -->
+              <div class="rating-item">
+                <div class="rating">
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                </div>
+
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="width: 60%"></div>
+                </div>
+
+                <div class="review-number">40</div>
+              </div>
+              <!-- item 3 -->
+              <div class="rating-item">
+                <div class="rating">
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="width: 30%"></div>
+                </div>
+                <div class="review-number">32</div>
+              </div>
+              <!-- item 4 -->
+              <div class="rating-item">
+                <div class="rating">
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="width: 20%"></div>
+                </div>
+                <div class="review-number">22</div>
+              </div>
+              <!-- item 5 -->
+              <div class="rating-item">
+                <div class="rating">
+                  <i class="las la-star"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                  <i class="las la-star text-gray-200 gray"></i>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="width: 10%"></div>
+                </div>
+                <div class="review-number">10</div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-5 mb-4">
+            <ul class="nav my-tab-nav" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-plan"
+                  type="button" role="tab" aria-controls="all-tab-plan" aria-selected="true">All Review</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="five-star-tab" data-bs-toggle="tab" data-bs-target="#five-star-tab-pane"
+                  type="button" role="tab" aria-controls="five-star-tab-pane" aria-selected="false"> 5
+                  <i class="las la-star"></i></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="four-star-tab" data-bs-toggle="tab" data-bs-target="#four-star-tab-pane"
+                  type="button" role="tab" aria-controls="four-star-tab-pane" aria-selected="false"> 4
+                  <i class="las la-star"></i></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="three-star-tab" data-bs-toggle="tab" data-bs-target="#three-star-tab-pane"
+                  type="button" role="tab" aria-controls="three-star-tab-pane" aria-selected="false"> 3
+                  <i class="las la-star"></i></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="two-star-tab" data-bs-toggle="tab" data-bs-target="#two-star-tab-pane"
+                  type="button" role="tab" aria-controls="two-star-tab-pane" aria-selected="false"> 2
+                  <i class="las la-star"></i></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="one-star-tab" data-bs-toggle="tab" data-bs-target="#one-star-tab-pane"
+                  type="button" role="tab" aria-controls="one-star-tab-pane" aria-selected="false"> 1
+                  <i class="las la-star"></i></button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="myTabContent">
+            <!-- Item 1 -->
+            <div class="tab-pane  show active" id="all-tab-plan" role="tabpanel" tabindex="0">
+              <div class="review-wrapper">
+                <div class="review">
+                  <div class="byer-coment-box">
+                    <div class="flex-between-center">
+                      <div>
+                        <h5>Rakibul Hasan</h5>
+                        <div class="rating">
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                        </div>
+                      </div>
+
+                      <div>12 month ago</div>
+                    </div>
+                    <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, eius.</p>
+                    <div class="img-box">
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span class="acton-number">5</span>
+                        <span class="action-name"> Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span class="acton-number">2</span>
+                        <span class="action-name">Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller-comment-box">
+                    <h5 class="seller-name">Seller Response</h5>
+                    <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Quasi, explicabo.</p>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span>Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span>Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="byer-coment-box">
+                    <div class="flex-between-center">
+                      <div>
+                        <h5>William Henry</h5>
+                        <div class="rating">
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star  gray"></i>
+                        </div>
+                      </div>
+
+                      <div>12 month ago</div>
+                    </div>
+                    <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, eius.</p>
+                    <div class="img-box">
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span class="acton-number">5</span>
+                        <span class="action-name"> Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span class="acton-number">2</span>
+                        <span class="action-name">Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller-comment-box">
+                    <h5 class="seller-name">Seller Response</h5>
+                    <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Quasi, explicabo.</p>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span>Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span>Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="byer-coment-box">
+                    <div class="flex-between-center">
+                      <div>
+                        <h5>Jhon Doe</h5>
+                        <div class="rating">
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star  gray"></i>
+                          <i class="las la-star  gray"></i>
+                        </div>
+                      </div>
+
+                      <div>3 month ago</div>
+                    </div>
+                    <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, eius.</p>
+                    <div class="img-box">
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span class="acton-number">5</span>
+                        <span class="action-name"> Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span class="acton-number">2</span>
+                        <span class="action-name">Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller-comment-box">
+                    <h5 class="seller-name">Seller Response</h5>
+                    <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Quasi, explicabo.</p>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span>Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span>Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="byer-coment-box">
+                    <div class="flex-between-center">
+                      <div>
+                        <h5>Benjamin Theodore</h5>
+                        <div class="rating">
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star  gray"></i>
+                          <i class="las la-star  gray"></i>
+                          <i class="las la-star  gray"></i>
+                        </div>
+                      </div>
+
+                      <div>2 weak ago</div>
+                    </div>
+                    <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, eius.</p>
+                    <div class="img-box">
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span class="acton-number">5</span>
+                        <span class="action-name"> Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span class="acton-number">2</span>
+                        <span class="action-name">Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller-comment-box">
+                    <h5 class="seller-name">Seller Response</h5>
+                    <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Quasi, explicabo.</p>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span>Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span>Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="byer-coment-box">
+                    <div class="flex-between-center">
+                      <div>
+                        <h5>Daniel Jack</h5>
+                        <div class="rating">
+                          <i class="las la-star"></i>
+                          <i class="las la-star  gray"></i>
+                          <i class="las la-star  gray"></i>
+                          <i class="las la-star  gray"></i>
+                          <i class="las la-star  gray"></i>
+                        </div>
+                      </div>
+
+                      <div>3 days ago</div>
+                    </div>
+                    <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, eius.</p>
+                    <div class="img-box">
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                      <div class="img-item">
+                        <img src="./img/all-product/shirt-1.jpg" alt="img">
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span class="acton-number">5</span>
+                        <span class="action-name"> Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span class="acton-number">2</span>
+                        <span class="action-name">Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller-comment-box">
+                    <h5 class="seller-name">Seller Response</h5>
+                    <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Quasi, explicabo.</p>
+                    <div class="action">
+                      <div>
+                        <i class="las la-thumbs-up"></i>
+                        <span>Like</span>
+                      </div>
+                      <div>
+                        <i class="las la-reply"></i>
+                        <span>Reply</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!--  Item 2 -->
+            <div class="tab-pane fade" id="five-star-tab-pane" role="tabpanel" tabindex="1">
+              <div class="review">
+                <div class="byer-coment-box">
+                  <div class="flex-between-center">
+                    <div>
+                      <h5>Rakibul Hasan</h5>
+                      <div class="rating">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                      </div>
+                    </div>
+
+                    <div>12 month ago</div>
+                  </div>
+                  <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    eius.</p>
+                  <div class="img-box">
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span class="acton-number">5</span>
+                      <span class="action-name"> Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span class="acton-number">2</span>
+                      <span class="action-name">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="seller-comment-box">
+                  <h5 class="seller-name">Seller Response</h5>
+                  <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quasi, explicabo.</p>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span>Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span>Reply</span>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="tab-pane fade" id="four-star-tab-pane" role="tabpanel" tabindex="2">
+              <div class="review">
+                <div class="byer-coment-box">
+                  <div class="flex-between-center">
+                    <div>
+                      <h5>Rakibul Hasan</h5>
+                      <div class="rating">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star  gray"></i>
+                      </div>
+                    </div>
+
+                    <div>12 month ago</div>
+                  </div>
+                  <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    eius.</p>
+                  <div class="img-box">
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span class="acton-number">5</span>
+                      <span class="action-name"> Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span class="acton-number">2</span>
+                      <span class="action-name">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="seller-comment-box">
+                  <h5 class="seller-name">Seller Response</h5>
+                  <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quasi, explicabo.</p>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span>Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span>Reply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="tab-pane fade" id="three-star-tab-pane" role="tabpanel" tabindex="3">
+              <div class="review">
+                <div class="byer-coment-box">
+                  <div class="flex-between-center">
+                    <div>
+                      <h5>Rakibul Hasan</h5>
+                      <div class="rating">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star  gray"></i>
+                        <i class="las la-star  gray"></i>
+                      </div>
+                    </div>
+
+                    <div>12 month ago</div>
+                  </div>
+                  <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    eius.</p>
+                  <div class="img-box">
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span class="acton-number">5</span>
+                      <span class="action-name"> Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span class="acton-number">2</span>
+                      <span class="action-name">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="seller-comment-box">
+                  <h5 class="seller-name">Seller Response</h5>
+                  <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quasi, explicabo.</p>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span>Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span>Reply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="tab-pane fade" id="two-star-tab-pane" role="tabpanel" tabindex="4">
+              <div class="review">
+                <div class="byer-coment-box">
+                  <div class="flex-between-center">
+                    <div>
+                      <h5>Rakibul Hasan</h5>
+                      <div class="rating">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star  gray"></i>
+                        <i class="las la-star  gray"></i>
+                        <i class="las la-star  gray"></i>
+                      </div>
+                    </div>
+
+                    <div>12 month ago</div>
+                  </div>
+                  <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    eius.</p>
+                  <div class="img-box">
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span class="acton-number">5</span>
+                      <span class="action-name"> Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span class="acton-number">2</span>
+                      <span class="action-name">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="seller-comment-box">
+                  <h5 class="seller-name">Seller Response</h5>
+                  <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quasi, explicabo.</p>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span>Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span>Reply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="tab-pane fade" id="one-star-tab-pane" role="tabpanel" tabindex="5">
+              <div class="review">
+                <div class="byer-coment-box">
+                  <div class="flex-between-center">
+                    <div>
+                      <h5>Rakibul Hasan</h5>
+                      <div class="rating">
+                        <i class="las la-star"></i>
+                        <i class="las la-star  gray"></i>
+                        <i class="las la-star  gray"></i>
+                        <i class="las la-star  gray"></i>
+                        <i class="las la-star  gray"></i>
+                      </div>
+                    </div>
+
+                    <div>12 month ago</div>
+                  </div>
+                  <p class="comment">This Product is Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    eius.</p>
+                  <div class="img-box">
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                    <div class="img-item">
+                      <img src="./img/all-product/shirt-1.jpg" alt="img">
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span class="acton-number">5</span>
+                      <span class="action-name"> Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span class="acton-number">2</span>
+                      <span class="action-name">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="seller-comment-box">
+                  <h5 class="seller-name">Seller Response</h5>
+                  <p class="comment">Thank you so much for your review. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quasi, explicabo.</p>
+                  <div class="action">
+                    <div>
+                      <i class="las la-thumbs-up"></i>
+                      <span>Like</span>
+                    </div>
+                    <div>
+                      <i class="las la-reply"></i>
+                      <span>Reply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h4 class="mb-3">Releated Products</h4>
+          <div class="product-card-wrappre">
+
+            <!-- item 1 -->
+            <div class="product-card-v2">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 col-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/shirt-1.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-8">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">New Stylish Export Quality Long Sleeve Casual Shirt For Men - Shirt For Men - Shirt -
+                        Shirt For Men</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$50 <span class="line-through">$70</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-gray-200 gray"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="product-card-v2">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 cl-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/dress-1.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-8">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">China Linen Fabrics Glorious Designed Gown 1piece long kurti different koti, Gown long
+                        kurti For Stylish Women / Girls</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$120 <span class="line-through">$150</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-gray-200 gray"></i>
+                      <i class="las la-star text-gray-200 gray"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="product-card-v2 ">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 col-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/mobile-1.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-8">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">Redmi Note 12 4G 6GB Ram and 64GB Rom Smartphone - Unofficial</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$500 <span class="line-through">$520</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 4 -->
+            <div class="product-card-v2">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 col-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/wathc-1.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-8">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">Homel T900 Ultra ,T900 Ultra2, T800 Ultra, T800 Ultra2 Smart Watch Full Touch
+                        Bluetooth Call Sports Heart Rate Sleeping Monitoring Smartwatch Series 8 Women Men Watch</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$200 <span class="line-through">$220</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 5 -->
+            <div class="product-card-v2">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 col-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/dress-2.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-8">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">China Linen Fabrics Glorious Designed Gown 1piece long kurti different koti, Gown long
+                        kurti For Stylish Women / Girls</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$120 <span class="line-through">$150</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-gray-200 gray"></i>
+                      <i class="las la-star text-gray-200 gray"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 6 -->
+            <div class="product-card-v2">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 col-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/shirt-2.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-8">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">New Stylish Export Quality Long Sleeve Casual Shirt For Men - Shirt For Men - Shirt -
+                        Shirt For Men</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$50 <span class="line-through">$70</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-gray-200 gray"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 7 -->
+            <div class="product-card-v2">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 col-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/wathc-2.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-9">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">Homel T900 Ultra ,T900 Ultra2, T800 Ultra, T800 Ultra2 Smart Watch Full Touch
+                        Bluetooth Call Sports Heart Rate Sleeping Monitoring Smartwatch Series 8 Women Men Watch</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$200 <span class="line-through">$220</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 8 -->
+            <div class="product-card-v2 ">
+              <div class="row items-center justify-center gx-0">
+                <div class="col-3 col-lg-4">
+                  <div class="product-cardv2__img">
+                    <a href="#">
+                      <img src="./img/all-product/mobile-2.jpg" class="img-fluid rounded-start product-card-v2__img"
+                        alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-8">
+                  <div class="product-card-v2__body">
+                    <h6 class="title">
+                      <a href="#">Redmi Note 12 4G 6GB Ram and 64GB Rom Smartphone - Unofficial</a>
+                    </h6>
+                    <div class="price-box">
+                      <div>$500 <span class="line-through">$520</span></div>
+                    </div>
+                    <div class="rating">
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                      <i class="las la-star text-yellow-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************ Footer ************** -->
+  <footer class="footer-section">
+    <div class="subscribe-wrapper">
+      <div class="container">
+        <div class="subscribe">
+          <div class="subscribe__header">
+            <h2 class="title">Subscribe to Our Newsletter</h2>
+            <p class="text">Subscribe to our newsletter & get notification about discounts.</p>
+          </div>
+          <div class="subscribe__box">
+            <input type="text" class="input" placeholder="Enter your email address">
+            <div class="btn-wrapper">
+              <button class="button primary-btn rounded-pill">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-4 my-4">
+        <div class="col">
+          <div class="footer-item">
+            <a href="#" class="logo text"> Goods<span>Park</span></a>
+            <p>GoodsPark is a ipsum dolor sit amet consectetur adipisicing elit. Ad enim magnam quibusdam amet at quod.
+            </p>
+            <!-- social icons -->
+            <ul class="social-icon">
+              <li>
+                <a href="#">
+                  <i class="lab la-facebook social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="lab la-instagram social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="lab la-twitter social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="lab la-youtube social-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-col">
+            <h3 class="title">My Account</h3>
+            <ul class="footer-menu">
+              <li class="footer-item">
+                <a href="#" class="footer-link">My Profile</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">My Order</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">My Review</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-col">
+            <h3 class="title">Quick Links</h3>
+            <ul class="text-gray-500 text-base flex flex-col gap-2">
+              <li class="footer-item">
+                <a href="#" class="footer-link">About Us</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Seller Policy</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Support Policy</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Seller Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-col">
+            <h3 class="title">Information</h3>
+            <ul class="list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Hot Deals</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">New Arrivals</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Flash sale</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Top Categories</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">All Product</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="footer-col">
+            <h3 class="title">Contact Us</h3>
+            <ul class="text-gray-500 text-base flex flex-col gap-2">
+              <li class="footer-item">
+                <i class="las la-phone text-xl"></i>
+                <a href="tel:+432123445" class="footer-link">+432 123 445</a>
+              </li>
+              <li class="footer-item">
+                <i class="las la-phone text-xl"></i>
+                <a href="tel:+132123443" class="footer-link">+132 123 443</a>
+              </li>
+              <li class="footer-item">
+                <i class="las la-envelope text-xl"></i>
+                <a href="mailto:goodspark@gamil.com" class="footer-link">goodspark.com</a>
+              </li>
+              <li class="footer-item">
+                <i class="las la-map-marker text-xl"></i>
+                <a href="https://www.google.com/maps/@23.8698828,90.3842619,15z?entry=ttu"
+                  class="footer-link">Sector-11, Uttara, Dhaka</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="text-sm">© 2024<a href="#">GoodsPark</a>. All Rights Reserved. </span>
+    </div>
+  </footer>
+  <!-- ************ script ************** -->
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/extm.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

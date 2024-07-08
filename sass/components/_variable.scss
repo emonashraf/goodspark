@@ -56,6 +56,16 @@
   height: 100%;
   object-fit: cover;
 }
+.w-200{
+  width: 200px;
+}
+.max-h-800{
+  max-height: 600px;
+}
+.min-w-150{
+  min-width: 300px !important;
+}
+
 .hover-overlay {
   @include overlay;
   &:hover {
@@ -127,7 +137,7 @@
   
   
 }
-.flex-column {
+.d-flex-column {
   display: flex;
   flex-direction: column;
   gap: 1rem;

@@ -2,22 +2,43 @@
 @use "../components/mixins" as *;
 @use "../components/variable" as *;
 
-
+.action-position{
+  left: 1rem;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+.active{
+  color: $primary;
+}
+.sort-btn{
+  font-size: 1.6rem;
+}
 .toggle-wrap{  
-  .sub{
-    @include before-angle;
+  .title{
+    position: relative;
+    padding: 1.5rem  1.2rem;
+    &::after{
+      content: "\f107";
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      position: absolute;
+      right: 1.2rem;
+      font-size: 1rem;
+      top: calc(50% - .6rem);
+      transition: all 0.5s ease;
+    }
   }
   .toggle-able{
       display: none;
   }
   
   &.active{
-    .sub{
+    .title{
       color: #000;
       &::after{
         transition: all 0.5s ease;
         transform: rotate(-180deg);
-        top: 0%;
+        
       }
     }
   }
@@ -27,27 +48,30 @@
   flex-direction: column;
   gap: 1.5rem;
   position: relative;
- 
+
   .sidebar-item{
-    padding: 1.5rem 1.2rem;
     border: 1px solid $gray-200;
     border-radius: 6px;
-    .sub, .title{
+    .title{
       color: $gray-800;
       font-size: 1rem;
     }
     .list{   
-      margin-top: 1rem;
+      padding: 0  1.2rem 1.5rem 1.2rem;
       font-size: 1rem;
       li,.form-group{
         &:not(:last-child){
           margin-bottom: 1rem;
         }
       }  
+    }
+    label{
+      color: $gray-700;
     } 
   }  
 }
-.range-slider {              
+.range-slider { 
+  padding: 1.5rem 1.2rem;             
   padding-bottom: 2rem;
 .price-input {
   width: 100%;

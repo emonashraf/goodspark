@@ -1,0 +1,13 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/variable" as *;
+
+
+.service-section{
+    .service-item{
+        @include media-breakpoint-down(sm) {
+           min-height: 200px;
+           text-align: center;
+          }
+    }
+}

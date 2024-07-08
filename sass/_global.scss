@@ -122,11 +122,17 @@ small {
 span {
   color: $gray-600;
 }
+del{
+  color: $gray-600;
+  font-weight: 300;
+}
 // table
 table {
   border-collapse: separate;
   border-spacing: 0;
+ 
   tr {
+   
     &:first-child {
       th {
         &:first-child {
@@ -137,6 +143,7 @@ table {
         }
       }
       td {
+        
         border-top: 1px solid $gray-300;
       }
     }
@@ -180,18 +187,19 @@ table {
 //
 .table-border-r-none {
   tr {
+   
     th,
     td {
       text-align: left;
       &:not(:last-child) {
         border-right: none;
-        width: 100%;
+        // width: 100%;
       }
     }
     td {
       font-size: 1rem;
       img {
-        width: 60px;
+        // width: 60px;
         object-fit: cover;
       }
     }
@@ -208,16 +216,17 @@ table {
   .quantity {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     .qunatity-btn {
-      background-color: $gray-300;
+      background-color: $gray-200;
       font-size: 14px;
-      width: 18px;
-      height: 18px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 3px;
+      // border-radius: 3px;
       text-align: center;
       line-height: 0;
     }

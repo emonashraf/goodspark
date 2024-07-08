@@ -32,6 +32,7 @@
   &__img {
     overflow: hidden;
     display: block;
+    
     img {
       @include transition-sm;
       
@@ -118,6 +119,9 @@
     color: $black;
     text-align: start;
     padding: 1.5rem;
+    @include media-breakpoint-down(sm) {
+      padding: 1rem;
+    }
     .title {
       @include line-clamp;
       margin-bottom: 1rem;
@@ -129,7 +133,7 @@
       justify-content: space-between;
       font-size: 1rem;
       @include media-breakpoint-down(md) {
-        font-size: .8rem;
+        font-size: .9rem;
       }
       
       .line-through {
