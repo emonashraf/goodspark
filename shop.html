@@ -2425,7 +2425,8 @@
                 Filter Menu
               </a>
             </div>
-            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="filterMenu" aria-labelledby="filterMenu">
+            <div class="offcanvas offcanvas-lg offcanvas-start" tabindex="-1" id="filterMenu"
+              aria-labelledby="filterMenu">
               <div class="offcanvas-header flex-between-center bg-primary">
                 <h3 class="text-white">Filter Menu</h3>
                 <button type="button" class="text-white fs-18" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -2628,6 +2629,201 @@
                     </form>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-flex flex-column sidebar">
+              <!-- item 1 -->
+              <div class="sidebar-item toggle-wrap">
+                <h3 class="title">Men Clothing Fashion</h3>
+                <ul class="list toggle-able">
+                  <li>
+                    <a href="#">Shirt</a>
+                  </li>
+                  <li>
+                    <a href="#">T-Shirt</a>
+                  </li>
+                  <li>
+                    <a href="#">Formal Shirt</a>
+                  </li>
+                  <li>
+                    <a href="#">Panjabi</a>
+                  </li>
+                  <li>
+                    <a href="#">Pent</a>
+                  </li>
+                  <li>
+                    <a href="#">Shows</a>
+                  </li>
+                  <li>
+                    <a href="#">Watch</a>
+                  </li>
+                  <li>
+                    <a href="#">Hudi</a>
+                  </li>
+                  <li>
+                    <a href="#">Cap</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- item 2  -->
+              <div class="range-slider sidebar-item">
+                <h3 class="title">Price Range</h3>
+                <div class="price-input">
+                  <div class="field">
+                    <input type="number" class="input-min" value="2500">
+                  </div>
+                  <div class="seperator">-</div>
+                  <div class="field">
+                    <input type="number" class="input-max" value="7500">
+                  </div>
+                </div>
+                <div class="slider">
+                  <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                  <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                  <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                </div>
+              </div>
+              <!-- item 3  -->
+              <div class="check-box sidebar-item toggle-wrap">
+                <h3 class="title">Fabric</h3>
+                <form class="list toggle-able">
+                  <div class="form-group">
+                    <input type="checkbox" id="muslin">
+                    <label for="muslin">Muslin</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="cotton">
+                    <label for="cotton">Cotton</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="denim">
+                    <label for="denim">Denim</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="lawn">
+                    <label for="lawn">Lawn</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="chiffon">
+                    <label for="chiffon">Chiffon</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="chintz">
+                    <label for="chintz">Chintz</label>
+                  </div>
+                </form>
+              </div>
+              <!-- item-4 -->
+              <div class="check-box sidebar-item toggle-wrap">
+                <h3 class="title">Size</h3>
+                <form class="list toggle-able">
+                  <div class="form-group">
+                    <input type="checkbox" id="s">
+                    <label for="s">S</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="m">
+                    <label for="m">M</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="l">
+                    <label for="l">L</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="xl">
+                    <label for="xl">Xl</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="xxl">
+                    <label for="xxl">xxL</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="xxxl">
+                    <label for="xxxl">xxxl</label>
+                  </div>
+                </form>
+              </div>
+              <!-- item 5 -->
+              <div class="check-box sidebar-item toggle-wrap">
+                <h3 class="title">Sleeves</h3>
+                <form class="list toggle-able">
+                  <div class="form-group">
+                    <input type="checkbox" id="cap-sleeves">
+                    <label for="cap-sleeves">Cap Sleeves</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="bell-sleeve">
+                    <label for="bell-sleeve">Bell Sleeve</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="kimono-sleeve">
+                    <label for="kimono-sleeve">Kimono Sleeves</label>
+                  </div>
+                </form>
+              </div>
+              <!-- item 6 -->
+              <div class=" color-picker sidebar-item toggle-wrap">
+                <h3 class="title">Color</h3>
+                <form class="list toggle-able">
+                  <div class="form-group">
+                    <input type="checkbox" id="red">
+                    <label for="red"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="green">
+                    <label for="green"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="yellow">
+                    <label for="yellow"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="blue">
+                    <label for="blue"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="black">
+                    <label for="black"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="orange">
+                    <label for="orange"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="indigo">
+                    <label for="indigo"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="cyan">
+                    <label for="cyan"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="megenta">
+                    <label for="megenta"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="teal">
+                    <label for="teal"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="pink">
+                    <label for="pink"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="meroon">
+                    <label for="meroon"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="silver">
+                    <label for="silver"></label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="brown">
+                    <label for="brown"></label>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ $(window).on('scroll', function () {
 });
 // End of Custom select
 
-// 
+// mobile nav 
 $('.nav-item').on('click', function (e) {
   e.stopPropagation();
   if ($(this).children('.menu').length) {
